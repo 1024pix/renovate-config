@@ -1,7 +1,12 @@
 {
   "name": "renovate-config",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": "16",
+    "npm": ">=8.13.2 <9"
+  },
   "description": "1024pix shared renovate config",
   "scripts": {
     "format": "prettier --write .",
