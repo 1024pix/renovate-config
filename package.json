@@ -7,7 +7,8 @@
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "run-p validate:*",
-    "validate:default": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator"
+    "validate:default": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator",
+    "validate:aggressive": "RENOVATE_CONFIG_FILE=aggressive.json renovate-config-validator"
   },
   "repository": {
     "type": "git",
