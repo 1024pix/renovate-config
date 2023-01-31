@@ -11,8 +11,13 @@ https://app.renovatebot.com/dashboard#github/1024pix/renovate-config/
 
 Choose your `preset` :
 
-- `default`: create at most 5 pull request per week, wait for review
-- `aggressive`: create pull request as soon as possible, merge if tests pass
+- `default`: 
+  - create at most 5 pull request per week:
+  - do not merge.
+- `aggressive`: 
+  - create pull request as soon as possible (wait 7 days after a version is published on npm);
+  - create as many pull request as necessary;
+  - merge if tests pass (do not wait for review).
 
 Create a `renovate.json` file under `.github` folder.
 
