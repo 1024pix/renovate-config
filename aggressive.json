@@ -9,10 +9,6 @@
     {
       "matchPackagePatterns": ["*"],
       "automerge": true
-    },
-    {
-      "matchDatasources": ["npm"],
-      "stabilityDays": 7
     }
   ]
 }
