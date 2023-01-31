@@ -4,6 +4,7 @@
   "schedule": ["at any time"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "labels": ["renovate", "no-review-app"],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
