@@ -12,5 +12,6 @@
   "prConcurrentLimit": 5,
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
-  "stabilityDays": 7
+  "stabilityDays": 7,
+  "commitMessagePrefix": "[BUMP]"
 }
