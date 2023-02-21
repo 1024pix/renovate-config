@@ -13,5 +13,6 @@
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
   "stabilityDays": 7,
-  "commitMessagePrefix": "[BUMP]"
+  "commitMessagePrefix": "[BUMP]",
+  "rebaseWhen": "never"
 }
