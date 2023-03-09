@@ -10,7 +10,7 @@
     "local>1024pix/renovate-config//presets/group-by-directory"
   ],
   "prConcurrentLimit": 5,
-  "rangeStrategy": "bump",
+  "rangeStrategy": "pin",
   "labels": ["dependencies"],
   "stabilityDays": 7,
   "commitMessagePrefix": "[BUMP]",
