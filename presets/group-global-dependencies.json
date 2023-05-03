@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["(node|npm)"],
+      "groupName": "node"
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["nginx"],
+      "groupName": "nginx"
+    },
+    {
+      "matchPackagePatterns": ["redis"],
+      "groupName": "redis"
+    },
+    {
+      "matchPackagePatterns": ["postgres"],
+      "groupName": "postgres"
+    }
+  ]
+}
