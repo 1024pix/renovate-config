@@ -13,7 +13,7 @@ Choose your `preset` :
 
 - `default`:
   - wait 7 days after a version is published on npm to select it;
-  - runs once on Monday;
+  - runs hourly every weekday;
   - create at most 5 pull request per week;
   - do not merge.
 - `aggressive`:
