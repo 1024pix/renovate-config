@@ -2,25 +2,42 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["(node|npm)"],
-      "excludeDepNames": "nodemon",
+      "matchPackagePatterns": ["^(node|npm|cimg/node)$"],
       "groupName": "node",
       "rangeStrategy": "bump"
     },
     {
-      "matchPackagePatterns": ["eslint"],
+      "matchPackagePatterns": ["^eslint$"],
       "groupName": "eslint"
     },
     {
-      "matchPackagePatterns": ["nginx"],
+      "matchPackagePatterns": ["^nginx$"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
       "groupName": "nginx"
     },
     {
-      "matchPackagePatterns": ["redis"],
+      "matchPackagePatterns": ["^redis$"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
       "groupName": "redis"
     },
     {
-      "matchPackagePatterns": ["postgres"],
+      "matchPackagePatterns": ["^postgres$"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
       "groupName": "postgres"
     }
   ]

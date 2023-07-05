@@ -2,7 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "excludePackagePatterns": ["(node|npm|eslint|nginx|redis|postgres)"],
+      "excludePackagePatterns": [
+        "^(node|npm|cimg/node|eslint|nginx|redis|postgres)$"
+      ],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     }
