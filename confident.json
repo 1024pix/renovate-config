@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>1024pix/renovate-config:default"],
+  "packageRules": [
+    {
+      "matchConfidence": ["high", "very high"],
+      "addLabels": ["confident", ":rocket: Ready to Merge"],
+      "automerge": true
+    }
+  ]
+}
