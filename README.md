@@ -16,7 +16,7 @@ Three `presets` are available :
   - wait 7 days after a version is published on npm to select it;
   - create at most 5 pull request per week;
   - do not merge.
-- `confident`:
+- `auto-patch`:
   - runs hourly every weekday;
   - wait 7 days after a version is published on npm to select it;
   - create at most 5 pull request per week;
