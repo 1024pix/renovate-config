@@ -3,6 +3,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["(node|npm)"],
+      "excludeDepNames": "nodemon",
       "groupName": "node",
       "rangeStrategy": "bump"
     },
