@@ -25,6 +25,7 @@ Three `presets` are available :
   - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
 - `aggressive`:
   - runs hourly every weekday;
+  - wait 7 days after a version is published on npm to select it;
   - create as many pull request as necessary;
   - approves its own PR using Github App Renovate Approve;
   - adds label ":rocket: Ready to Merge" to the PR;
