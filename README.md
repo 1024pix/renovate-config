@@ -16,12 +16,12 @@ Three `presets` are available :
   - wait 7 days after a version is published on npm to select it;
   - create at most 5 pull request per week;
   - do not merge.
-- `confident`:
+- `auto-patch`:
   - runs hourly every weekday;
   - wait 7 days after a version is published on npm to select it;
   - create at most 5 pull request per week;
   - approves its own PR using Github App Renovate Approve;
-  - adds label ":rocket: Ready to Merge" to the PR if [Renovate's confidence](https://docs.renovatebot.com/merge-confidence/) is "high" or "very high";
+  - adds label ":rocket: Ready to Merge" to the PR if update type is a patch;
   - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
 - `aggressive`:
   - runs hourly every weekday;
