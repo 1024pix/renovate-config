@@ -3,7 +3,8 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["(node|npm)"],
-      "groupName": "node"
+      "groupName": "node",
+      "rangeStrategy": "bump"
     },
     {
       "matchPackagePatterns": ["eslint"],
