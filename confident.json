@@ -3,7 +3,7 @@
   "extends": ["github>1024pix/renovate-config:default"],
   "packageRules": [
     {
-      "matchConfidence": ["high", "very high"],
+      "matchUpdateTypes": ["patch"],
       "addLabels": ["confident", ":rocket: Ready to Merge"],
       "automerge": true
     }
