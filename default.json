@@ -5,7 +5,6 @@
     ":maintainLockFilesMonthly",
     ":preserveSemverRanges",
     ":semanticCommits",
-    "local>1024pix/renovate-config//presets/group-dependencies-non-major",
     "local>1024pix/renovate-config//presets/group-by-directory",
     "local>1024pix/renovate-config//presets/group-global-dependencies"
   ],
