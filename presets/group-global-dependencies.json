@@ -9,8 +9,7 @@
     {
       "matchPackagePatterns": ["^(node|cimg/node)$"],
       "groupName": "node",
-      "rangeStrategy": "bump",
-      "versioning": "node"
+      "rangeStrategy": "bump"
     },
     {
       "matchPackagePatterns": ["^eslint$"],
