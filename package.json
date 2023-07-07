@@ -15,6 +15,7 @@
     "validate:default": "renovate-config-validator default.json",
     "validate:aggressive": "renovate-config-validator aggressive.json",
     "validate:auto-patch": "renovate-config-validator auto-patch.json",
+    "validate:auto-minor": "renovate-config-validator auto-minor.json",
     "validate:presets": "renovate-config-validator presets/*.json"
   },
   "repository": {
