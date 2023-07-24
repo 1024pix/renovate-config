@@ -3,11 +3,13 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["^npm$"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "npm",
       "rangeStrategy": "bump"
     },
     {
       "matchPackagePatterns": ["^(node|cimg/node)$"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "node",
       "rangeStrategy": "bump"
     },
