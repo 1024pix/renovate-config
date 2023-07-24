@@ -4,20 +4,17 @@
     {
       "matchPackagePatterns": ["^npm$"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "npm",
-      "rangeStrategy": "bump"
+      "groupName": "npm"
     },
     {
       "matchPackagePatterns": ["^(node|cimg/node)$"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "node",
-      "rangeStrategy": "bump"
+      "groupName": "node"
     },
     {
       "matchPackagePatterns": ["^(node|npm|cimg/node)$"],
       "matchUpdateTypes": ["major"],
-      "groupName": "node-npm",
-      "rangeStrategy": "bump",
+      "groupName": "node-npm"
       "enabled": false
     },
     {
