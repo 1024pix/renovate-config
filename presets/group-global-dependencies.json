@@ -14,7 +14,7 @@
     {
       "matchPackagePatterns": ["^(node|npm|cimg/node)$"],
       "matchUpdateTypes": ["major"],
-      "groupName": "node-npm"
+      "groupName": "node-npm",
       "enabled": false
     },
     {
