@@ -14,6 +14,13 @@
       "rangeStrategy": "bump"
     },
     {
+      "matchPackagePatterns": ["^(node|npm|cimg/node)$"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "node-npm",
+      "rangeStrategy": "bump",
+      "enabled": false
+    },
+    {
       "matchPackagePatterns": ["^eslint$"],
       "groupName": "eslint"
     },
