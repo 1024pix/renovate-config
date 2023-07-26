@@ -2,14 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["^npm$"],
-      "groupName": "npm",
-      "rangeStrategy": "bump"
-    },
-    {
-      "matchPackagePatterns": ["^(node|cimg/node)$"],
+      "matchPackagePatterns": ["^node$"],
       "groupName": "node",
-      "rangeStrategy": "bump"
+      "rangeStrategy": "bump",
+      "versioning": "node"
     },
     {
       "matchPackagePatterns": ["^eslint$"],
