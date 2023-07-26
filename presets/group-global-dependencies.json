@@ -4,7 +4,8 @@
     {
       "matchPackagePatterns": ["^node$"],
       "groupName": "node",
-      "rangeStrategy": "bump"
+      "rangeStrategy": "bump",
+      "versioning": "node"
     },
     {
       "matchPackagePatterns": ["^eslint$"],
