@@ -8,8 +8,28 @@
       "versioning": "node"
     },
     {
+      "matchPackagePatterns": ["^@1024pix/pix-ui$"],
+      "groupName": "pix-ui"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/ember-testing-library$"],
+      "groupName": "pix-ember-testing-library"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/stylelint-config$"],
+      "groupName": "pix-stylelint-config"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/eslint-config$"],
+      "groupName": "pix-eslint-config"
+    },
+    {
       "matchPackagePatterns": ["^eslint$"],
       "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["^qunit$"],
+      "groupName": "qunit"
     },
     {
       "matchPackagePatterns": ["^nginx$"],
