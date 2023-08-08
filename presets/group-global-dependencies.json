@@ -8,8 +8,32 @@
       "versioning": "node"
     },
     {
+      "matchPackagePatterns": ["^@1024pix/pix-ui$"],
+      "groupName": "pix-ui",
+      "minimumReleaseAge": "0"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/ember-testing-library$"],
+      "groupName": "pix-ember-testing-library",
+      "minimumReleaseAge": "0"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/stylelint-config$"],
+      "groupName": "pix-stylelint-config",
+      "minimumReleaseAge": "0"
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/eslint-config$"],
+      "groupName": "pix-eslint-config",
+      "minimumReleaseAge": "0"
+    },
+    {
       "matchPackagePatterns": ["^eslint$"],
       "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["^qunit$"],
+      "groupName": "qunit"
     },
     {
       "matchPackagePatterns": ["^nginx$"],
