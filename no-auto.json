@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":maintainLockFilesMonthly",
+    ":preserveSemverRanges",
+    ":semanticCommits",
+    ":separateMultipleMajorReleases",
+    "local>1024pix/renovate-config//presets/detect-circleci-custom-dependencies",
+    "local>1024pix/renovate-config//presets/group-by-directory",
+    "local>1024pix/renovate-config//presets/group-global-dependencies"
+  ],
+  "prConcurrentLimit": 5,
+  "labels": ["dependencies"],
+  "minimumReleaseAge": "7 days",
+  "commitMessagePrefix": "[BUMP]",
+  "rebaseWhen": "never",
+  "schedule": "every 1 hour every weekday"
+}
