@@ -15,5 +15,12 @@
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
-  "schedule": "every 1 hour every weekday"
+  "schedule": "every 1 hour every weekday",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "addLabels": ["auto-minor", ":rocket: Ready to Merge"],
+      "automerge": true
+    }
+  ]
 }
