@@ -9,9 +9,16 @@ https://app.renovatebot.com/dashboard#github/1024pix/renovate-config/
 
 ## Available configurations
 
-Four `presets` are available :
+Here are the available `presets`:
 
 - `default`:
+  - runs hourly every weekday;
+  - wait 7 days after a version is published on npm to select it;
+  - create at most 5 pull request per week;
+  - approves its own PR using Github App Renovate Approve;
+  - adds label ":rocket: Ready to Merge" to the PR if update type is a minor or a patch;
+  - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
+- `no-auto`:
   - runs hourly every weekday;
   - wait 7 days after a version is published on npm to select it;
   - create at most 5 pull request per week;
@@ -23,13 +30,6 @@ Four `presets` are available :
   - approves its own PR using Github App Renovate Approve;
   - adds label ":rocket: Ready to Merge" to the PR if update type is a patch;
   - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
-- `auto-minor`:
-  - runs hourly every weekday;
-  - wait 7 days after a version is published on npm to select it;
-  - create at most 5 pull request per week;
-  - approves its own PR using Github App Renovate Approve;
-  - adds label ":rocket: Ready to Merge" to the PR if update type is a minor or a patch;
-  - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
 - `aggressive`:
   - runs hourly every weekday;
   - wait 7 days after a version is published on npm to select it;
@@ -37,6 +37,8 @@ Four `presets` are available :
   - approves its own PR using Github App Renovate Approve;
   - adds label ":rocket: Ready to Merge" to the PR;
   - Jean Pierre rebases and merges the PR if required status checks are ok (ex: Actions, CircleCi, Deploy ...).
+
+`auto-minor` is a deprecated config and should be replaced by the `default` config.
 
 ## Project onboarding
 
