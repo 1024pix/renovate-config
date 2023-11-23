@@ -11,12 +11,12 @@
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "run-p validate:**",
-    "validate:default": "renovate-config-validator default.json",
-    "validate:no-auto": "renovate-config-validator no-auto.json",
-    "validate:aggressive": "renovate-config-validator aggressive.json",
-    "validate:auto-patch": "renovate-config-validator auto-patch.json",
-    "validate:auto-minor": "renovate-config-validator auto-minor.json",
-    "validate:presets": "renovate-config-validator presets/*.json"
+    "validate:default": "renovate-config-validator --strict default.json",
+    "validate:no-auto": "renovate-config-validator --strict no-auto.json",
+    "validate:aggressive": "renovate-config-validator --strict aggressive.json",
+    "validate:auto-patch": "renovate-config-validator --strict auto-patch.json",
+    "validate:auto-minor": "renovate-config-validator --strict auto-minor.json",
+    "validate:presets": "renovate-config-validator --strict presets/*.json"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,6 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.0",
-    "renovate": "^36.0.0"
+    "renovate": "^37.0.0"
   }
 }
