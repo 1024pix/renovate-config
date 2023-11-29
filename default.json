@@ -21,6 +21,12 @@
       "matchUpdateTypes": ["lockFileMaintenance"],
       "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^@1024pix/"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
+      "automerge": true
     }
   ]
 }
