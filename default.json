@@ -16,10 +16,9 @@
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
   "schedule": "every 1 hour every weekday",
-  "rangeStrategy": "pin",
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch", "minor"],
+      "matchUpdateTypes": ["lockFileMaintenance"],
       "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
     }
