@@ -20,7 +20,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "minor"],
-      "addLabels": ["auto-minor", ":rocket: Ready to Merge"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
     }
   ]
