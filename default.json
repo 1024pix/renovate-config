@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":maintainLockFilesMonthly",
+    ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
@@ -18,8 +18,8 @@
   "schedule": "every 1 hour every weekday",
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch", "minor"],
-      "addLabels": ["auto-minor", ":rocket: Ready to Merge"],
+      "matchUpdateTypes": ["lockFileMaintenance", "minor", "patch"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
     }
   ]
