@@ -8,7 +8,7 @@
   },
   "description": "1024pix shared renovate config",
   "scripts": {
-    "format": "prettier --write .",
+    "lint:fix": "prettier --write .",
     "lint": "prettier --check .",
     "test": "run-p validate:**",
     "validate:default": "renovate-config-validator --strict default.json",
