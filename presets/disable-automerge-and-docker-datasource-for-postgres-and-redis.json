@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": ["postgres", "redis"],
+      "matchDatasources": ["docker"],
+      "enabled": false
+    },
+    {
+      "matchDepTypes": ["postgres", "redis"],
+      "matchDatasources": ["scalingo-postgres", "scalingo-redis"],
+      "automerge": false
+    }
+  ]
+}
