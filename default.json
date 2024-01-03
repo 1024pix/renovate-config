@@ -8,7 +8,11 @@
     ":separateMultipleMajorReleases",
     "local>1024pix/renovate-config//presets/detect-circleci-custom-dependencies",
     "local>1024pix/renovate-config//presets/group-by-directory",
-    "local>1024pix/renovate-config//presets/group-global-dependencies"
+    "local>1024pix/renovate-config//presets/group-global-dependencies",
+    "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
+    "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
+    "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager",
+    "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis"
   ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
