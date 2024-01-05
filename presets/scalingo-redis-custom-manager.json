@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^scalingo.json$",
+        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "\"plan\": \"redis:redis-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",
+        "redis:\\s.*image: redis:(?<currentValue>.*)-alpine"
+      ],
+      "depNameTemplate": "redis",
+      "datasourceTemplate": "custom.scalingo-redis"
+    }
+  ]
+}
