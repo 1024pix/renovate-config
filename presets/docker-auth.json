@@ -2,6 +2,22 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "hostRules": [
     {
+      "hostType": "docker",
+      "matchHost": "hub.docker.com",
+      "username": "pixdockerhub",
+      "encrypted": {
+        "password": "wcFMA/xDdHCJBTolAQ/+KRr0tWytYIylmc28Oa8fmzTa2HrzDKvbiECpSZiZ78qp0mm4+g3YOwVAc7JEFe+ygxE9f8Y4MHvKNsxrxIOtseu+pmkP3hL1CU3S2ZZIFNOu9gcAiBAfoZisPnFbHvCWGaywUqQBm9PY+0/2xnxgLAkhxuAnzWsabHDGzC2cI65eVnNa6imMrXOCwEvYcm6I1CD5kM5JavdMKhdZpMB8IiLScTadKgNp2u1rQRe4nK8uIlbK0CPjqi57WpcazFkzaBA/ZVXqkhpextMERWFG+OelYA1hV0v0nus5kBFBtx1Gc9w4t+0oxo4eUdve40Gv1YTu0QCvwKsSxvaDFqryNv4Z5mOkIRJowLK6ifDeiUK0tDtokCwm5XR0/wd7qHU7LmZ/UII0Jyz9L9VOleAIPP4+J5bLv9saBoGn6Wco3dc5YaGW/S1X0tvrE/9wCgtG/YFcuHgQexhk0O+3LXjUrrPszS5L3e1zY8HSfokzfdLkfnphHc4Vf+rqgeBHt4vS3qnxJHEb6JG+aJnod4dMuQFcnSfwKidHpHu7O6f0KZB02fHHBFLd2dvKeMmI1jcDPtaBTAGZ0o7aLMSrI5Phn1mojv81xy4aY84u7OyZmK/RNdXoLOmU6yOPh2cqaO5IBR37sugOxBujZYRPYTnmRSKjMST3FedrJgSDJQOlVz/ScgGPxWLuEHnVgzykjJi7w9brzjZnl/DnEuqEX+0fh/eeva0K4CO4ENinyVxbMjy2AFON8XyGGmsH7nIP4eago4mHlGkCui7Q+qZkHTYT1jLZ7Nlcm9IpfL315L0uErqOZjc8RjUbK2YpgiEfi/g3yTFOCA"
+      }
+    },
+    {
+      "hostType": "docker",
+      "matchHost": "docker.io",
+      "username": "pixdockerhub",
+      "encrypted": {
+        "password": "wcFMA/xDdHCJBTolAQ/+KRr0tWytYIylmc28Oa8fmzTa2HrzDKvbiECpSZiZ78qp0mm4+g3YOwVAc7JEFe+ygxE9f8Y4MHvKNsxrxIOtseu+pmkP3hL1CU3S2ZZIFNOu9gcAiBAfoZisPnFbHvCWGaywUqQBm9PY+0/2xnxgLAkhxuAnzWsabHDGzC2cI65eVnNa6imMrXOCwEvYcm6I1CD5kM5JavdMKhdZpMB8IiLScTadKgNp2u1rQRe4nK8uIlbK0CPjqi57WpcazFkzaBA/ZVXqkhpextMERWFG+OelYA1hV0v0nus5kBFBtx1Gc9w4t+0oxo4eUdve40Gv1YTu0QCvwKsSxvaDFqryNv4Z5mOkIRJowLK6ifDeiUK0tDtokCwm5XR0/wd7qHU7LmZ/UII0Jyz9L9VOleAIPP4+J5bLv9saBoGn6Wco3dc5YaGW/S1X0tvrE/9wCgtG/YFcuHgQexhk0O+3LXjUrrPszS5L3e1zY8HSfokzfdLkfnphHc4Vf+rqgeBHt4vS3qnxJHEb6JG+aJnod4dMuQFcnSfwKidHpHu7O6f0KZB02fHHBFLd2dvKeMmI1jcDPtaBTAGZ0o7aLMSrI5Phn1mojv81xy4aY84u7OyZmK/RNdXoLOmU6yOPh2cqaO5IBR37sugOxBujZYRPYTnmRSKjMST3FedrJgSDJQOlVz/ScgGPxWLuEHnVgzykjJi7w9brzjZnl/DnEuqEX+0fh/eeva0K4CO4ENinyVxbMjy2AFON8XyGGmsH7nIP4eago4mHlGkCui7Q+qZkHTYT1jLZ7Nlcm9IpfL315L0uErqOZjc8RjUbK2YpgiEfi/g3yTFOCA"
+      }
+    },
+    {
       "matchHost": "https://hub.docker.com",
       "username": "pixdockerhub",
       "encrypted": {
