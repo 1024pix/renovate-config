@@ -5,11 +5,12 @@
       "customType": "regex",
       "fileMatch": [
         "^scalingo.json$",
-        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
+        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
+        "^.circleci/config.yml$"
       ],
       "matchStrings": [
         "\"plan\": \"postgresql:postgresql-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",
-        "postgres:\\s.*image: postgres:(?<currentValue>.*)-alpine"
+        "image: postgres:(?<currentValue>.*)-alpine"
       ],
       "depNameTemplate": "postgres",
       "datasourceTemplate": "custom.scalingo-postgres"

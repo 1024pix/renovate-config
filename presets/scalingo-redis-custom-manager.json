@@ -5,11 +5,12 @@
       "customType": "regex",
       "fileMatch": [
         "^scalingo.json$",
-        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"
+        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
+        "^.circleci/config.yml$"
       ],
       "matchStrings": [
         "\"plan\": \"redis:redis-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",
-        "redis:\\s.*image: redis:(?<currentValue>.*)-alpine"
+        "image: redis:(?<currentValue>.*)-alpine"
       ],
       "depNameTemplate": "redis",
       "datasourceTemplate": "custom.scalingo-redis"
