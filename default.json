@@ -21,6 +21,7 @@
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
   "schedule": "every 1 hour every weekday",
+  "configMigration": true,
   "packageRules": [
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
