@@ -4,7 +4,7 @@
   "private": false,
   "license": "AGPL-3.0",
   "engines": {
-    "node": "^20.12.1"
+    "node": "^20.12.2"
   },
   "description": "1024pix shared renovate config",
   "scripts": {
