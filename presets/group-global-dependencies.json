@@ -33,6 +33,10 @@
       "groupName": "eslint"
     },
     {
+      "matchPackagePatterns": ["^sinon$"],
+      "groupName": "sinon"
+    },
+    {
       "matchPackagePatterns": ["^qunit$"],
       "groupName": "qunit"
     },
