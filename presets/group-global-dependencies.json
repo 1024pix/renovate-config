@@ -2,46 +2,34 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["^(node|cimg/node)$"],
+      "matchPackageNames": ["/^(node|cimg/node)$/"],
       "groupName": "node",
       "rangeStrategy": "bump",
       "versioning": "node"
     },
     {
-      "matchPackagePatterns": ["^@1024pix/"],
+      "matchPackageNames": ["/^@1024pix//"],
       "minimumReleaseAge": "0",
       "rangeStrategy": "bump"
     },
+    { "matchPackageNames": ["/^@1024pix/pix-ui$/"], "groupName": "pix-ui" },
     {
-      "matchPackagePatterns": ["^@1024pix/pix-ui$"],
-      "groupName": "pix-ui"
-    },
-    {
-      "matchPackagePatterns": ["^@1024pix/ember-testing-library$"],
+      "matchPackageNames": ["/^@1024pix/ember-testing-library$/"],
       "groupName": "pix-ember-testing-library"
     },
     {
-      "matchPackagePatterns": ["^@1024pix/stylelint-config$"],
+      "matchPackageNames": ["/^@1024pix/stylelint-config$/"],
       "groupName": "pix-stylelint-config"
     },
     {
-      "matchPackagePatterns": ["^@1024pix/eslint-config$"],
+      "matchPackageNames": ["/^@1024pix/eslint-config$/"],
       "groupName": "pix-eslint-config"
     },
+    { "matchPackageNames": ["/^eslint$/"], "groupName": "eslint" },
+    { "matchPackageNames": ["/^sinon$/"], "groupName": "sinon" },
+    { "matchPackageNames": ["/^qunit$/"], "groupName": "qunit" },
     {
-      "matchPackagePatterns": ["^eslint$"],
-      "groupName": "eslint"
-    },
-    {
-      "matchPackagePatterns": ["^sinon$"],
-      "groupName": "sinon"
-    },
-    {
-      "matchPackagePatterns": ["^qunit$"],
-      "groupName": "qunit"
-    },
-    {
-      "matchPackagePatterns": ["^nginx$"],
+      "matchPackageNames": ["/^nginx$/"],
       "matchManagers": [
         "circleci",
         "docker-compose",
@@ -51,7 +39,7 @@
       "groupName": "nginx"
     },
     {
-      "matchPackagePatterns": ["^redis$"],
+      "matchPackageNames": ["/^redis$/"],
       "matchManagers": [
         "circleci",
         "docker-compose",
@@ -61,7 +49,7 @@
       "groupName": "redis"
     },
     {
-      "matchPackagePatterns": ["^postgres$"],
+      "matchPackageNames": ["/^postgres$/"],
       "matchManagers": [
         "circleci",
         "docker-compose",
