@@ -25,7 +25,6 @@
       "matchPackageNames": ["/^@1024pix/eslint-config$/"],
       "groupName": "pix-eslint-config"
     },
-    { "matchPackageNames": ["/^eslint$/"], "groupName": "eslint" },
     { "matchPackageNames": ["/^sinon$/"], "groupName": "sinon" },
     { "matchPackageNames": ["/^qunit$/"], "groupName": "qunit" },
     {
