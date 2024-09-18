@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": ["/^spark-((core)|(sql))$/"],
+      "matchPackageNames": ["/spark-((core)|(sql))$/"],
       "groupName": "spark"
     }
   ]
