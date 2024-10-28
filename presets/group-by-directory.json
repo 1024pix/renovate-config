@@ -5,6 +5,11 @@
       "matchPackageNames": ["!/^(node|npm|cimg/node|nginx|redis|postgres)$/"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
+      "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     }
   ]
 }
