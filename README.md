@@ -63,7 +63,7 @@ Eg. for `pix-bot` repository https://app.renovatebot.com/dashboard#github/1024pi
 
 ### Onboarding forked projects
 
-If the project is a fork, you need to add the following configuration in the `renovate.json` file : `"includeForks": true`
+If the project is a fork, you need to add the following configuration in the `renovate.json` file : `"forkProcessing": "enabled",`
 
 Issues are disabled by default on forked projects, Dependency dashboard needs Github Issues to appear.
 
