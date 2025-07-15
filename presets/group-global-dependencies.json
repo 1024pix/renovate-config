@@ -32,6 +32,14 @@
     },
     { "matchPackageNames": ["/^sinon$/"], "groupName": "sinon" },
     { "matchPackageNames": ["/^qunit$/"], "groupName": "qunit" },
+     {
+      "matchPackageNames": ["/^@embroider/"],
+      "groupName": "embroider"
+    },
+    {
+      "matchPackageNames": ["/eslint/"],
+      "groupName": "eslint"
+    },
     {
       "matchPackageNames": ["/^nginx$/"],
       "matchManagers": [
