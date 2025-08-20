@@ -4,7 +4,7 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "^scalingo.json$",
+        "(^|/)scalingo.json$",
         "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
         "^.circleci/config.yml$"
       ],
