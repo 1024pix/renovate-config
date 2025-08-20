@@ -3,7 +3,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
+      "managerFilePatterns": [
         "^scalingo.json$",
         "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
         "^.circleci/config.yml$"
