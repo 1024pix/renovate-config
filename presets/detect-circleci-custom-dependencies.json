@@ -3,9 +3,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": ["^.circleci/config.yml$"],
+      "managerFilePatterns": ["/^\\.circleci\\/.+\\.ya?ml$/"],
       "matchStrings": [
-        "# renovate datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s*[a-zA-Z]+: (?<currentValue>.*)\\s"
+        "# renovate:? datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\s+[^:]+: (?<currentValue>.\\S+)"
       ]
     }
   ]
