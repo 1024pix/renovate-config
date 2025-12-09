@@ -30,7 +30,10 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["/^@1024pix//", "/^(node|cimg/node)$/"],
+      "matchPackageNames": [
+        "/^@1024pix\\/(?!epreuves-components$)/",
+        "/^(node|cimg/node)$/"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
