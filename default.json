@@ -37,6 +37,20 @@
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
+    },
+    {
+      "groupName": "pix-ui update across apps",
+      "matchPackageNames": ["@1024pix/pix-ui"],
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon/package.json-pix",
+        "./junior/package.json"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
+      "automerge": true
     }
   ]
 }
