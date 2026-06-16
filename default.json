@@ -31,8 +31,9 @@
     },
     {
       "matchPackageNames": [
-        "/^@1024pix\\/(?!epreuves-components$)/",
-        "/^(node|cimg/node)$/"
+        "^@1024pix/",
+        "/^(node|cimg/node)$/",
+        "!@1024pix/epreuves-components"
       ],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump"],
