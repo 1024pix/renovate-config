@@ -4,15 +4,15 @@
  * when npm packages share a common CHANGELOG.md
  *
  * Usage:
- *   node scripts/generate-preset.js <owner/repo> <packagesDir> [outputFile]
+ *   node scripts/generate-preset-monorepo.js <owner/repo> <packagesDir> [outputFile]
  *
  * Environment:
  *   GITHUB_TOKEN  Recommended to avoid GitHub API rate limits (60 req/h without, 5000 with)
  *
  * Example:
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js experimental presets/open-telemetry-experimental.json
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js api presets/open-telemetry-api.json
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js semantic-conventions presets/open-telemetry-semantic-conventions.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js experimental presets/open-telemetry-experimental.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js api presets/open-telemetry-api.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js semantic-conventions presets/open-telemetry-semantic-conventions.json
  */
 
 "use strict";
@@ -23,7 +23,7 @@ const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 
 if (!args[0] || args[0] === "--help") {
   console.error(
-    "Usage: node scripts/generate-preset.js <owner/repo> [outputFile] [--branch=<branch>]",
+    "Usage: node scripts/generate-preset-monorepo.js <owner/repo> [outputFile] [--branch=<branch>]",
   );
   console.error(
     "  GITHUB_TOKEN env var is recommended to avoid API rate limits",
@@ -91,10 +91,6 @@ async function main() {
   const branchFlag = process.argv.find((a) => a.startsWith("--branch="));
   let branch = branchFlag ? branchFlag.slice("--branch=".length) : null;
 
-  // TODO debug
-  console.log(packagesDir)
-  console.log(outputFile)
-
   if (!branch) {
     console.error(`Fetching metadata for ${owner}/${repo}...`);
     const repoData = await githubGet(`/repos/${owner}/${repo}`);
@@ -128,11 +124,6 @@ async function main() {
   console.error(
     `Found ${packageJsonPaths.length} package.json files to process`,
   );
-
-  // TODO
-  // Filter on packagesDir
-  // Update comments to explain monorepo of pacakge single CHANGELOG.md (unlike contrib)
-  console.log(packageJsonPaths);
 
   /** @type {Array<{name: string, rootDir: string}>} */
   const packages = [];
