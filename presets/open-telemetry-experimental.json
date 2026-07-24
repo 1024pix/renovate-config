@@ -2,13 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@opentelemetry/api"],
-      "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js",
-      "sourceDirectory": "api"
-    },
-    {
-      "matchDatasources": ["npm"],
+      "matchDatasources": [
+        "npm"
+      ],
       "matchPackageNames": [
         "@opentelemetry/api-logs",
         "@opentelemetry/configuration",
@@ -41,12 +37,6 @@
       ],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js",
       "sourceDirectory": "experimental"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@opentelemetry/semantic-conventions"],
-      "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js",
-      "sourceDirectory": "semantic-conventions"
     }
   ]
 }

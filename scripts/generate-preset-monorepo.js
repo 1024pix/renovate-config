@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 /**
  * Generates a Renovate preset JSON for a GitHub monorepo,
- * grouping npm packages by their top-level directory.
+ * when npm packages share a common CHANGELOG.md
  *
  * Usage:
- *   node scripts/generate-preset.js <owner/repo> [output-file]
+ *   node scripts/generate-preset.js <owner/repo> <packagesDir> [outputFile]
  *
  * Environment:
  *   GITHUB_TOKEN  Recommended to avoid GitHub API rate limits (60 req/h without, 5000 with)
  *
  * Example:
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js-contrib presets/open-telemetry-contrib.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js experimental presets/open-telemetry-experimental.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js api presets/open-telemetry-api.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset.js open-telemetry/opentelemetry-js semantic-conventions presets/open-telemetry-semantic-conventions.json
  */
 
 "use strict";
@@ -21,7 +23,7 @@ const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 
 if (!args[0] || args[0] === "--help") {
   console.error(
-    "Usage: node scripts/generate-preset.js <owner/repo> [output-file] [--branch=<branch>]",
+    "Usage: node scripts/generate-preset.js <owner/repo> [outputFile] [--branch=<branch>]",
   );
   console.error(
     "  GITHUB_TOKEN env var is recommended to avoid API rate limits",
@@ -29,10 +31,14 @@ if (!args[0] || args[0] === "--help") {
   process.exit(args[0] === "--help" ? 0 : 1);
 }
 
-const [repoArg, outputFile] = args;
+const [repoArg, packagesDir, outputFile] = args;
 const [owner, repo] = repoArg.split("/");
 if (!owner || !repo) {
   console.error('Error: repository must be in "owner/repo" format');
+  process.exit(1);
+}
+if (!packagesDir) {
+  console.error('Error: packagesDir must be specified');
   process.exit(1);
 }
 
@@ -40,10 +46,10 @@ const GITHUB_API = "https://api.github.com";
 const token = process.env.GITHUB_TOKEN;
 
 const apiHeaders = {
-  Accept: "application/vnd.github+json",
+  "Accept": "application/vnd.github+json",
   "User-Agent": "renovate-config-preset-generator",
   "X-GitHub-Api-Version": "2022-11-28",
-  ...(token && { Authorization: `Bearer ${token}` }),
+  "Authorization": `Bearer ${token}`,
 };
 
 async function githubGet(path) {
@@ -85,6 +91,10 @@ async function main() {
   const branchFlag = process.argv.find((a) => a.startsWith("--branch="));
   let branch = branchFlag ? branchFlag.slice("--branch=".length) : null;
 
+  // TODO debug
+  console.log(packagesDir)
+  console.log(outputFile)
+
   if (!branch) {
     console.error(`Fetching metadata for ${owner}/${repo}...`);
     const repoData = await githubGet(`/repos/${owner}/${repo}`);
@@ -106,6 +116,7 @@ async function main() {
   const packageJsonPaths = treeData.tree
     .filter(({ type, path }) => {
       if (type !== "blob") return false;
+      if (!path.startsWith(packagesDir)) return false;
       // Must end with /package.json (skip the root package.json)
       if (!path.includes("/") || !path.endsWith("/package.json")) return false;
       const parts = path.split("/");
@@ -117,6 +128,11 @@ async function main() {
   console.error(
     `Found ${packageJsonPaths.length} package.json files to process`,
   );
+
+  // TODO
+  // Filter on packagesDir
+  // Update comments to explain monorepo of pacakge single CHANGELOG.md (unlike contrib)
+  console.log(packageJsonPaths);
 
   /** @type {Array<{name: string, rootDir: string}>} */
   const packages = [];
