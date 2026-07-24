@@ -36,7 +36,7 @@ if (!owner || !repo) {
   process.exit(1);
 }
 if (!packagesDir) {
-  console.error('Error: packagesDir must be specified');
+  console.error("Error: packagesDir must be specified");
   process.exit(1);
 }
 
@@ -44,10 +44,10 @@ const GITHUB_API = "https://api.github.com";
 const token = process.env.GITHUB_TOKEN;
 
 const apiHeaders = {
-  "Accept": "application/vnd.github+json",
+  Accept: "application/vnd.github+json",
   "User-Agent": "renovate-config-preset-generator",
   "X-GitHub-Api-Version": "2022-11-28",
-  "Authorization": `Bearer ${token}`,
+  Authorization: `Bearer ${token}`,
 };
 
 async function githubGet(path) {
@@ -150,7 +150,10 @@ async function main() {
         matchDatasources: ["npm"],
         matchPackageNames: [pkg.name],
         sourceUrl,
-        sourceDirectory: filePath.slice(0, filePath.length - "/package.json".length)
+        sourceDirectory: filePath.slice(
+          0,
+          filePath.length - "/package.json".length,
+        ),
       });
     } catch (err) {
       process.stderr.write(`\n  Error on ${filePath}: ${err.message}\n`);
@@ -160,7 +163,9 @@ async function main() {
 
   const output = {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    packageRules: packages.sort((a, b) => a.sourceDirectory.localeCompare(b.sourceDirectory))
+    packageRules: packages.sort((a, b) =>
+      a.sourceDirectory.localeCompare(b.sourceDirectory),
+    ),
   };
 
   const json = JSON.stringify(output, null, 2) + "\n";

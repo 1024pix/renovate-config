@@ -38,7 +38,7 @@ if (!owner || !repo) {
   process.exit(1);
 }
 if (!packagesDir) {
-  console.error('Error: packagesDir must be specified');
+  console.error("Error: packagesDir must be specified");
   process.exit(1);
 }
 
@@ -46,10 +46,10 @@ const GITHUB_API = "https://api.github.com";
 const token = process.env.GITHUB_TOKEN;
 
 const apiHeaders = {
-  "Accept": "application/vnd.github+json",
+  Accept: "application/vnd.github+json",
   "User-Agent": "renovate-config-preset-generator",
   "X-GitHub-Api-Version": "2022-11-28",
-  "Authorization": `Bearer ${token}`,
+  Authorization: `Bearer ${token}`,
 };
 
 async function githubGet(path) {
@@ -152,12 +152,14 @@ async function main() {
 
   const output = {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    packageRules: [{
-      matchDatasources: ["npm"],
-      matchPackageNames: packages.sort(),
-      sourceUrl,
-      sourceDirectory: packagesDir,
-    }]
+    packageRules: [
+      {
+        matchDatasources: ["npm"],
+        matchPackageNames: packages.sort(),
+        sourceUrl,
+        sourceDirectory: packagesDir,
+      },
+    ],
   };
 
   const json = JSON.stringify(output, null, 2) + "\n";
@@ -169,9 +171,7 @@ async function main() {
     process.stdout.write(json);
   }
 
-  console.error(
-    `Done. 1 rule covering ${packages.length} packages.`,
-  );
+  console.error(`Done. 1 rule covering ${packages.length} packages.`);
 }
 
 main().catch((err) => {

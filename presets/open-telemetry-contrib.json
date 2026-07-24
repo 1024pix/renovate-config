@@ -2,119 +2,73 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/auto-configuration-propagators"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/auto-configuration-propagators"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-configuration-propagators"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/auto-instrumentations-node"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/auto-instrumentations-node"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-instrumentations-node"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/auto-instrumentations-web"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/auto-instrumentations-web"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-instrumentations-web"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/baggage-log-record-processor"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/baggage-log-record-processor"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/baggage-log-record-processor"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/baggage-span-processor"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/baggage-span-processor"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/baggage-span-processor"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/contrib-test-utils"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/contrib-test-utils"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/contrib-test-utils"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/host-metrics"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/host-metrics"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/host-metrics"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/id-generator-aws-xray"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/id-generator-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/id-generator-aws-xray"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-amqplib"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-amqplib"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-amqplib"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-aws-lambda"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-aws-lambda"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-aws-lambda"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-aws-sdk"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-aws-sdk"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-aws-sdk"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
+      "matchDatasources": ["npm"],
       "matchPackageNames": [
         "@opentelemetry/instrumentation-browser-navigation"
       ],
@@ -122,592 +76,356 @@
       "sourceDirectory": "packages/instrumentation-browser-navigation"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-bunyan"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-bunyan"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-bunyan"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-cassandra-driver"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-cassandra-driver"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-cassandra-driver"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-connect"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-connect"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-connect"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-console"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-console"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-console"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-cucumber"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-cucumber"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-cucumber"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-dataloader"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-dataloader"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-dataloader"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-dns"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-dns"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-dns"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-document-load"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-document-load"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-document-load"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-express"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-express"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-express"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-fs"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-fs"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-fs"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-generic-pool"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-generic-pool"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-generic-pool"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-graphql"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-graphql"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-graphql"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-hapi"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-hapi"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-hapi"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-host-metrics"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-host-metrics"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-host-metrics"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-ioredis"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-ioredis"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-ioredis"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-kafkajs"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-kafkajs"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-kafkajs"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-knex"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-knex"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-knex"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-koa"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-koa"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-koa"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-long-task"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-long-task"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-long-task"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-lru-memoizer"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-lru-memoizer"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-lru-memoizer"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-memcached"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-memcached"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-memcached"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-mongodb"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-mongodb"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mongodb"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-mongoose"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-mongoose"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mongoose"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-mysql"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-mysql"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mysql"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-mysql2"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-mysql2"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mysql2"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-nestjs-core"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-nestjs-core"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-nestjs-core"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-net"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-net"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-net"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-openai"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-openai"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-openai"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-oracledb"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-oracledb"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-oracledb"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-pg"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-pg"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-pg"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-pino"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-pino"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-pino"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-redis"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-redis"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-redis"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-restify"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-restify"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-restify"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-router"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-router"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-router"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-runtime-node"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-runtime-node"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-runtime-node"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-sequelize"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-sequelize"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-sequelize"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-socket.io"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-socket.io"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-socket.io"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-tedious"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-tedious"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-tedious"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-typeorm"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-typeorm"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-typeorm"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-undici"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-undici"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-undici"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-user-interaction"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-user-interaction"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-user-interaction"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-web-exception"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-web-exception"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-web-exception"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/instrumentation-winston"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/instrumentation-winston"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-winston"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/plugin-react-load"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/plugin-react-load"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/plugin-react-load"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/propagator-aws-xray"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/propagator-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-aws-xray"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/propagator-aws-xray-lambda"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/propagator-aws-xray-lambda"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-aws-xray-lambda"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/propagator-instana"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/propagator-instana"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-instana"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/propagator-ot-trace"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/propagator-ot-trace"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-ot-trace"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/redis-common"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/redis-common"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/redis-common"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-alibaba-cloud"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-alibaba-cloud"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-alibaba-cloud"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-aws"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-aws"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-aws"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-azure"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-azure"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-azure"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-container"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-container"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-container"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-gcp"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-gcp"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-gcp"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-github"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-github"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-github"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/resource-detector-instana"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/resource-detector-instana"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-instana"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/sampler-aws-xray"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/sampler-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/sampler-aws-xray"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/sql-common"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/sql-common"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/sql-common"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@opentelemetry/winston-transport"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@opentelemetry/winston-transport"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/winston-transport"
     }
