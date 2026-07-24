@@ -17,7 +17,8 @@
     "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
     "local>1024pix/renovate-config//presets/open-telemetry-api",
     "local>1024pix/renovate-config//presets/open-telemetry-experimental",
-    "local>1024pix/renovate-config//presets/open-telemetry-semantic-conventions.json"
+    "local>1024pix/renovate-config//presets/open-telemetry-semantic-conventions.json",
+    "local>1024pix/renovate-config//presets/open-telemetry-contrib.json"
     ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
