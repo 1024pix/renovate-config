@@ -141,36 +141,23 @@ async function main() {
       // Skip private packages and packages without a name
       if (!pkg.name || pkg.private === true) continue;
 
-      const rootDir = filePath.split("/")[0];
-      packages.push({ name: pkg.name, rootDir });
+      packages.push(pkg.name);
     } catch (err) {
       process.stderr.write(`\n  Error on ${filePath}: ${err.message}\n`);
     }
   }
   process.stderr.write("\n");
 
-  // Group packages by root-level directory, sort names within each group
-  /** @type {Map<string, string[]>} */
-  const groups = new Map();
-  for (const { name, rootDir } of packages) {
-    if (!groups.has(rootDir)) groups.set(rootDir, []);
-    groups.get(rootDir).push(name);
-  }
-
   const sourceUrl = `https://github.com/${owner}/${repo}`;
-
-  const packageRules = [...groups.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([sourceDirectory, names]) => ({
-      matchDatasources: ["npm"],
-      matchPackageNames: names.sort(),
-      sourceUrl,
-      sourceDirectory,
-    }));
 
   const output = {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    packageRules,
+    packageRules: [{
+      matchDatasources: ["npm"],
+      matchPackageNames: packages.sort(),
+      sourceUrl,
+      sourceDirectory: packagesDir,
+    }]
   };
 
   const json = JSON.stringify(output, null, 2) + "\n";
@@ -183,7 +170,7 @@ async function main() {
   }
 
   console.error(
-    `Done. ${packageRules.length} rules covering ${packages.length} packages.`,
+    `Done. 1 rule covering ${packages.length} packages.`,
   );
 }
 
