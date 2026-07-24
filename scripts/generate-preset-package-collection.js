@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 /**
  * Generates a Renovate preset JSON for a GitHub monorepo,
- * where npm packages share a common CHANGELOG.md
+ * where each npm package has its own CHANGELOG.md
  *
  * Usage:
- *   node scripts/generate-preset-monorepo.js <owner/repo> <packagesDir> [outputFile]
+ *   node scripts/generate-preset-package-collection.js <owner/repo> <packagesDir> [outputFile]
  *
  * Environment:
  *   GITHUB_TOKEN  Recommended to avoid GitHub API rate limits (60 req/h without, 5000 with)
  *
  * Example:
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js experimental presets/open-telemetry-experimental.json
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js api presets/open-telemetry-api.json
- *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-monorepo.js open-telemetry/opentelemetry-js semantic-conventions presets/open-telemetry-semantic-conventions.json
+ *   GITHUB_TOKEN=ghp_xxx node scripts/generate-preset-package-collection.js open-telemetry/opentelemetry-js-contrib packages presets/open-telemetry-contrib.json
  */
 
 "use strict";
@@ -23,7 +21,7 @@ const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 
 if (!args[0] || args[0] === "--help") {
   console.error(
-    "Usage: node scripts/generate-preset-monorepo.js <owner/repo> [outputFile] [--branch=<branch>]",
+    "Usage: node scripts/generate-preset-package-collection.js <owner/repo> [outputFile] [--branch=<branch>]",
   );
   console.error(
     "  GITHUB_TOKEN env var is recommended to avoid API rate limits",
@@ -125,8 +123,15 @@ async function main() {
     `Found ${packageJsonPaths.length} package.json files to process`,
   );
 
-  /** @type {Array<string>} */
+  /** @type {Array<{
+   *   matchDatasources: Array<string>,
+   *   matchPackageNames: Array<string>,
+   *   sourceUrl: string,
+   *   sourceDirectory: string
+   * }>}
+   */
   const packages = [];
+  const sourceUrl = `https://github.com/${owner}/${repo}`;
 
   for (let i = 0; i < packageJsonPaths.length; i++) {
     const filePath = packageJsonPaths[i];
@@ -141,23 +146,21 @@ async function main() {
       // Skip private packages and packages without a name
       if (!pkg.name || pkg.private === true) continue;
 
-      packages.push(pkg.name);
+      packages.push({
+        matchDatasources: ["npm"],
+        matchPackageNames: [pkg.name],
+        sourceUrl,
+        sourceDirectory: filePath.slice(0, filePath.length - "/package.json".length)
+      });
     } catch (err) {
       process.stderr.write(`\n  Error on ${filePath}: ${err.message}\n`);
     }
   }
   process.stderr.write("\n");
 
-  const sourceUrl = `https://github.com/${owner}/${repo}`;
-
   const output = {
     $schema: "https://docs.renovatebot.com/renovate-schema.json",
-    packageRules: [{
-      matchDatasources: ["npm"],
-      matchPackageNames: packages.sort(),
-      sourceUrl,
-      sourceDirectory: packagesDir,
-    }]
+    packageRules: packages.sort((a, b) => a.sourceDirectory.localeCompare(b.sourceDirectory))
   };
 
   const json = JSON.stringify(output, null, 2) + "\n";
@@ -170,7 +173,7 @@ async function main() {
   }
 
   console.error(
-    `Done. 1 rule covering ${packages.length} packages.`,
+    `Done. ${packages.length} rules covering ${packages.length} packages.`,
   );
 }
 
