@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille outillage-scala : plugins sbt de project/plugins.sbt et version scalafmt de .scalafmt.conf",
+      "matchDepNames": ["scalafmt", "/:sbt-/"],
+      "groupName": "outillage-scala"
+    }
+  ]
+}
