@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille outillage-python : ruff, pytest et ses plugins, dans [dependency-groups] dev.",
+      "matchDepTypes": ["dependency-groups", "tool.uv.dev-dependencies"],
+      "matchPackageNames": ["ruff", "pytest", "/^pytest-/"],
+      "groupName": "outillage-python",
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}
