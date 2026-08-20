@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille python : .python-version ; requires-python et le suffixe -pythonX.Y du tag airflow restent manuels.",
+      "matchDepNames": ["python"],
+      "groupName": "python",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false,
+      "allowedVersions": "/^3\\.13/"
+    }
+  ]
+}
