@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille node : regroupe les montées minor/patch de Node.js (et de l'image cimg/node) en une seule PR auto-mergée avec le label auto-bump",
+      "matchPackageNames": ["/^(node|cimg/node)$/"],
+      "groupName": "node",
+      "rangeStrategy": "bump",
+      "versioning": "node",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}
