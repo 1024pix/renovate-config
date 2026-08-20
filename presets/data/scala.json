@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Scala : binaire 2.12 imposé par Spark (<4).",
+      "matchPackageNames": ["org.scala-lang:scala-library"],
+      "allowedVersions": "/^2\\.12\\./"
+    }
+  ]
+}
