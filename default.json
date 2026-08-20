@@ -7,7 +7,7 @@
     ":semanticCommits",
     ":separateMultipleMajorReleases",
     "local>1024pix/renovate-config//presets/docker-auth",
-    "local>1024pix/renovate-config//presets/detect-circleci-custom-dependencies",
+    "local>1024pix/renovate-config//presets/circleci",
     "local>1024pix/renovate-config//presets/group-by-directory",
     "local>1024pix/renovate-config//presets/group-global-dependencies",
     "local>1024pix/renovate-config//presets/data/spark",
@@ -34,7 +34,11 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["^@1024pix/", "/^(node|cimg/node)$/", "!@1024pix/epreuves-components"],
+      "matchPackageNames": [
+        "^@1024pix/",
+        "/^(node|cimg/node)$/",
+        "!@1024pix/epreuves-components"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump"],
       "automerge": true
