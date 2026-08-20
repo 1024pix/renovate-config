@@ -10,7 +10,6 @@
     "local>1024pix/renovate-config//presets/circleci",
     "local>1024pix/renovate-config//presets/group-by-directory",
     "local>1024pix/renovate-config//presets/group-global-dependencies",
-    "local>1024pix/renovate-config//presets/data/spark",
     "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
     "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
     "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager",
