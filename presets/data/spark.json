@@ -13,7 +13,7 @@
   ],
   "packageRules": [
     {
-      "description": "Famille spark (couplée) : image de base, deps sbt, spark-testing-base et SPARK_VERSION du DAG dans une seule PR.",
+      "description": "Famille spark : image de base, deps sbt, spark-testing-base et SPARK_VERSION du DAG dans une seule PR.",
       "matchPackageNames": ["spark", "/^org\\.apache\\.spark:/", "/^com\\.holdenkarau:spark-/"],
       "groupName": "spark",
       "additionalBranchPrefix": "",
