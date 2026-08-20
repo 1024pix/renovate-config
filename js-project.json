@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>1024pix/renovate-config:default",
+    "local>1024pix/renovate-config//presets/docker-auth",
+    "local>1024pix/renovate-config//presets/detect-circleci-custom-dependencies",
+    "local>1024pix/renovate-config//presets/group-by-directory",
+    "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
+    "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
+    "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager",
+    "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
+    "local>1024pix/renovate-config//presets/open-telemetry-api",
+    "local>1024pix/renovate-config//presets/open-telemetry-experimental",
+    "local>1024pix/renovate-config//presets/open-telemetry-semantic-conventions.json",
+    "local>1024pix/renovate-config//presets/open-telemetry-contrib.json",
+    "local>1024pix/renovate-config//presets/1024pix-dependencies-config.json",
+    "local>1024pix/renovate-config//presets/infra-dependencies-config.json",
+    "local>1024pix/renovate-config//presets/node-dependencies-config.json",
+    "local>1024pix/renovate-config//presets/lint-and-test-dependencies-config.json"
+  ],
+  "packageRules": [
+    {
+      "description": "Dépendances de développement : la range du manifeste est alignée (bump) sur la nouvelle version installée",
+      "matchDepTypes": ["devDependencies", "dev-dependencies", "dev"],
+      "rangeStrategy": "bump"
+    }
+  ]
+}
