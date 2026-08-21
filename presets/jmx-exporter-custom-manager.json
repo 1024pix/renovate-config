@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
+      "customType": "regex",
+      "matchStrings": [
+        "jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar"
+      ],
+      "depNameTemplate": "prometheus/jmx_exporter",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": [
+        "/folder-python-A/folder_python_a/helpers/PixSparkKubernetesOperator\\.py$/"
+      ]
+    }
+  ]
+}
