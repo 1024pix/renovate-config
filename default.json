@@ -5,7 +5,8 @@
     ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     ":semanticCommits",
-    ":separateMultipleMajorReleases"
+    ":separateMultipleMajorReleases",
+    "local>1024pix/renovate-config//presets/github-action-dependency-config.json"
   ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
