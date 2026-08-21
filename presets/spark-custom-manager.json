@@ -4,9 +4,7 @@
     {
       "description": "Track Spark version in PixSparkKubernetesOperator.py",
       "customType": "regex",
-      "matchStrings": [
-        "SPARK_VERSION = \"(?<currentValue>[^\"]+)\""
-      ],
+      "matchStrings": ["SPARK_VERSION = \"(?<currentValue>[^\"]+)\""],
       "depNameTemplate": "org.apache.spark:spark-core",
       "datasourceTemplate": "sbt-package",
       "managerFilePatterns": [
