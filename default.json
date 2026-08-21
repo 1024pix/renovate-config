@@ -6,7 +6,11 @@
     ":preserveSemverRanges",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
-    "local>1024pix/renovate-config//presets/github-action-dependency-config.json"
+    "local>1024pix/renovate-config//presets/github-action-dependency-config.json",
+    "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
+    "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
+    "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager",
+    "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis"
   ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
