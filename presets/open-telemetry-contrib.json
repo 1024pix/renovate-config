@@ -2,72 +2,84 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Indique le sous-répertoire packages/auto-configuration-propagators du monorepo opentelemetry-js-contrib pour @opentelemetry/auto-configuration-propagators, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/auto-configuration-propagators"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-configuration-propagators"
     },
     {
+      "description": "Indique le sous-répertoire packages/auto-instrumentations-node du monorepo opentelemetry-js-contrib pour @opentelemetry/auto-instrumentations-node, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/auto-instrumentations-node"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-instrumentations-node"
     },
     {
+      "description": "Indique le sous-répertoire packages/auto-instrumentations-web du monorepo opentelemetry-js-contrib pour @opentelemetry/auto-instrumentations-web, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/auto-instrumentations-web"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/auto-instrumentations-web"
     },
     {
+      "description": "Indique le sous-répertoire packages/baggage-log-record-processor du monorepo opentelemetry-js-contrib pour @opentelemetry/baggage-log-record-processor, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/baggage-log-record-processor"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/baggage-log-record-processor"
     },
     {
+      "description": "Indique le sous-répertoire packages/baggage-span-processor du monorepo opentelemetry-js-contrib pour @opentelemetry/baggage-span-processor, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/baggage-span-processor"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/baggage-span-processor"
     },
     {
+      "description": "Indique le sous-répertoire packages/contrib-test-utils du monorepo opentelemetry-js-contrib pour @opentelemetry/contrib-test-utils, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/contrib-test-utils"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/contrib-test-utils"
     },
     {
+      "description": "Indique le sous-répertoire packages/host-metrics du monorepo opentelemetry-js-contrib pour @opentelemetry/host-metrics, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/host-metrics"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/host-metrics"
     },
     {
+      "description": "Indique le sous-répertoire packages/id-generator-aws-xray du monorepo opentelemetry-js-contrib pour @opentelemetry/id-generator-aws-xray, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/id-generator-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/id-generator-aws-xray"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-amqplib du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-amqplib, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-amqplib"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-amqplib"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-aws-lambda du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-aws-lambda, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-aws-lambda"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-aws-lambda"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-aws-sdk du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-aws-sdk, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-aws-sdk"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-aws-sdk"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-browser-navigation du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-browser-navigation, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
         "@opentelemetry/instrumentation-browser-navigation"
@@ -76,354 +88,413 @@
       "sourceDirectory": "packages/instrumentation-browser-navigation"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-bunyan du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-bunyan, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-bunyan"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-bunyan"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-cassandra-driver du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-cassandra-driver, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-cassandra-driver"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-cassandra-driver"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-connect du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-connect, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-connect"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-connect"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-console du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-console, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-console"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-console"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-cucumber du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-cucumber, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-cucumber"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-cucumber"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-dataloader du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-dataloader, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-dataloader"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-dataloader"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-dns du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-dns, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-dns"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-dns"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-document-load du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-document-load, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-document-load"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-document-load"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-express du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-express, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-express"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-express"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-fs du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-fs, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-fs"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-fs"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-generic-pool du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-generic-pool, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-generic-pool"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-generic-pool"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-graphql du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-graphql, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-graphql"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-graphql"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-hapi du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-hapi, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-hapi"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-hapi"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-host-metrics du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-host-metrics, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-host-metrics"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-host-metrics"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-ioredis du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-ioredis, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-ioredis"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-ioredis"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-kafkajs du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-kafkajs, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-kafkajs"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-kafkajs"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-knex du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-knex, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-knex"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-knex"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-koa du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-koa, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-koa"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-koa"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-long-task du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-long-task, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-long-task"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-long-task"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-lru-memoizer du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-lru-memoizer, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-lru-memoizer"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-lru-memoizer"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-memcached du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-memcached, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-memcached"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-memcached"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-mongodb du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-mongodb, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-mongodb"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mongodb"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-mongoose du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-mongoose, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-mongoose"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mongoose"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-mysql du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-mysql, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-mysql"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mysql"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-mysql2 du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-mysql2, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-mysql2"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-mysql2"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-nestjs-core du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-nestjs-core, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-nestjs-core"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-nestjs-core"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-net du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-net, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-net"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-net"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-openai du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-openai, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-openai"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-openai"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-oracledb du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-oracledb, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-oracledb"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-oracledb"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-pg du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-pg, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-pg"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-pg"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-pino du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-pino, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-pino"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-pino"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-redis du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-redis, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-redis"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-redis"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-restify du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-restify, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-restify"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-restify"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-router du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-router, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-router"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-router"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-runtime-node du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-runtime-node, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-runtime-node"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-runtime-node"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-sequelize du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-sequelize, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-sequelize"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-sequelize"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-socket.io du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-socket.io, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-socket.io"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-socket.io"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-tedious du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-tedious, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-tedious"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-tedious"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-typeorm du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-typeorm, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-typeorm"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-typeorm"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-undici du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-undici, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-undici"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-undici"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-user-interaction du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-user-interaction, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-user-interaction"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-user-interaction"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-web-exception du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-web-exception, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-web-exception"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-web-exception"
     },
     {
+      "description": "Indique le sous-répertoire packages/instrumentation-winston du monorepo opentelemetry-js-contrib pour @opentelemetry/instrumentation-winston, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/instrumentation-winston"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/instrumentation-winston"
     },
     {
+      "description": "Indique le sous-répertoire packages/plugin-react-load du monorepo opentelemetry-js-contrib pour @opentelemetry/plugin-react-load, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/plugin-react-load"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/plugin-react-load"
     },
     {
+      "description": "Indique le sous-répertoire packages/propagator-aws-xray du monorepo opentelemetry-js-contrib pour @opentelemetry/propagator-aws-xray, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/propagator-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-aws-xray"
     },
     {
+      "description": "Indique le sous-répertoire packages/propagator-aws-xray-lambda du monorepo opentelemetry-js-contrib pour @opentelemetry/propagator-aws-xray-lambda, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/propagator-aws-xray-lambda"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-aws-xray-lambda"
     },
     {
+      "description": "Indique le sous-répertoire packages/propagator-instana du monorepo opentelemetry-js-contrib pour @opentelemetry/propagator-instana, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/propagator-instana"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-instana"
     },
     {
+      "description": "Indique le sous-répertoire packages/propagator-ot-trace du monorepo opentelemetry-js-contrib pour @opentelemetry/propagator-ot-trace, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/propagator-ot-trace"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/propagator-ot-trace"
     },
     {
+      "description": "Indique le sous-répertoire packages/redis-common du monorepo opentelemetry-js-contrib pour @opentelemetry/redis-common, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/redis-common"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/redis-common"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-alibaba-cloud du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-alibaba-cloud, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-alibaba-cloud"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-alibaba-cloud"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-aws du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-aws, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-aws"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-aws"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-azure du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-azure, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-azure"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-azure"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-container du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-container, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-container"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-container"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-gcp du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-gcp, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-gcp"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-gcp"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-github du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-github, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-github"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-github"
     },
     {
+      "description": "Indique le sous-répertoire packages/resource-detector-instana du monorepo opentelemetry-js-contrib pour @opentelemetry/resource-detector-instana, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/resource-detector-instana"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/resource-detector-instana"
     },
     {
+      "description": "Indique le sous-répertoire packages/sampler-aws-xray du monorepo opentelemetry-js-contrib pour @opentelemetry/sampler-aws-xray, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/sampler-aws-xray"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/sampler-aws-xray"
     },
     {
+      "description": "Indique le sous-répertoire packages/sql-common du monorepo opentelemetry-js-contrib pour @opentelemetry/sql-common, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/sql-common"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
       "sourceDirectory": "packages/sql-common"
     },
     {
+      "description": "Indique le sous-répertoire packages/winston-transport du monorepo opentelemetry-js-contrib pour @opentelemetry/winston-transport, afin que Renovate affiche les bonnes notes de version",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@opentelemetry/winston-transport"],
       "sourceUrl": "https://github.com/open-telemetry/opentelemetry-js-contrib",
