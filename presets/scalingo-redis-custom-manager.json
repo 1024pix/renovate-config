@@ -4,9 +4,9 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "(^|/)scalingo.json$",
-        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
-        "^.circleci/config.yml$"
+        "/(^|/)scalingo.json$/",
+        "/(^|/)(?:docker-)?compose[^/]*\\.ya?ml$/",
+        "/^.circleci/config.yml$/"
       ],
       "matchStrings": [
         "\"plan\": \"redis:redis-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",

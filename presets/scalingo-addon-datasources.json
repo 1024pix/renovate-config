@@ -5,14 +5,14 @@
       "defaultRegistryUrlTemplate": "https://hub.docker.com/v2/namespaces/scalingo/repositories/redis/tags",
       "format": "json",
       "transformTemplates": [
-        "{ \"releases\": $map($$.results, function($v) { { \"version\": $substringBefore($v.name, '-') } })}"
+        "{ \"releases\": $map($$.results^(>name), function($v) { { \"version\": $substringBefore($v.name, '-') } })}"
       ]
     },
     "scalingo-postgres": {
       "defaultRegistryUrlTemplate": "https://hub.docker.com/v2/namespaces/scalingo/repositories/postgresql/tags",
       "format": "json",
       "transformTemplates": [
-        "{ \"releases\": $map($$.results, function($v) { { \"version\": $split($v.name, '.', 2) ~> $join('.') } })}"
+        "{ \"releases\": $map($$.results^(>name), function($v) { { \"version\": $split($v.name, '.', 2) ~> $join('.') } })}"
       ]
     }
   }
