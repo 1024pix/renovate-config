@@ -16,7 +16,8 @@
     "validate:aggressive": "renovate-config-validator --strict aggressive.json",
     "validate:auto-patch": "renovate-config-validator --strict auto-patch.json",
     "validate:auto-minor": "renovate-config-validator --strict auto-minor.json",
-    "validate:presets": "renovate-config-validator --strict presets/*.json"
+    "validate:data-project": "renovate-config-validator --strict data-project.json",
+    "validate:presets": "renovate-config-validator --strict presets/*.json presets/data/*.json"
   },
   "repository": {
     "type": "git",
