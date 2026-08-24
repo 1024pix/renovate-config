@@ -3,6 +3,7 @@
   "packageRules": [
     {
       "description": "Isole les PR par application (monorepo) : préfixe de branche et suffixe de message de commit basés sur le répertoire parent de la dépendance",
+      "matchPackageNames": ["*"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     },
