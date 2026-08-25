@@ -12,12 +12,9 @@
     "lint": "prettier --check .",
     "test": "run-p validate:**",
     "validate:default": "renovate-config-validator --strict default.json",
-    "validate:no-auto": "renovate-config-validator --strict no-auto.json",
-    "validate:aggressive": "renovate-config-validator --strict aggressive.json",
-    "validate:auto-patch": "renovate-config-validator --strict auto-patch.json",
-    "validate:auto-minor": "renovate-config-validator --strict auto-minor.json",
     "validate:data-project": "renovate-config-validator --strict data-project.json",
-    "validate:presets": "renovate-config-validator --strict presets/*.json presets/data/*.json"
+    "validate:js-project": "renovate-config-validator --strict js-project.json",
+    "validate:presets": "renovate-config-validator --strict presets/*.json presets/**/*.json"
   },
   "repository": {
     "type": "git",

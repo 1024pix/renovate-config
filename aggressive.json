@@ -1,8 +1,0 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>1024pix/renovate-config:default"],
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
-  "addLabels": ["aggressive"],
-  "automerge": true
-}

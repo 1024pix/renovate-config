@@ -2,11 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": ["!/^(node|npm|cimg/node|nginx|redis|postgres)$/"],
+      "description": "Isole les PR par application (monorepo) : préfixe de branche et suffixe de message de commit basés sur le répertoire parent de la dépendance",
+      "matchPackageNames": ["*"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     },
     {
+      "description": "Applique le même isolement par application aux PR de maintenance de lockfile",
       "matchUpdateTypes": ["lockFileMaintenance"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"

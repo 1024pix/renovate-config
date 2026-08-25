@@ -1,0 +1,40 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Groupe les familles de dépendances lint et test en une seule PR, tous dossiers confondus, en auto-merge avec le label auto-bump",
+      "matchPackageNames": [
+        "/^(eslint|stylelint|prettier|sinon|qunit|mocha).*/"
+      ],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["/^eslint.*/"],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackageNames": ["/^stylelint.*/"],
+      "groupName": "stylelint"
+    },
+    {
+      "matchPackageNames": ["/^prettier.*/"],
+      "groupName": "prettier"
+    },
+    {
+      "matchPackageNames": ["/^sinon.*/"],
+      "groupName": "sinon"
+    },
+    {
+      "matchPackageNames": ["/^qunit.*/"],
+      "groupName": "qunit"
+    },
+    {
+      "matchPackageNames": ["/^mocha.*/"],
+      "groupName": "mocha"
+    }
+  ]
+}

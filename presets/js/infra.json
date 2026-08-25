@@ -1,0 +1,44 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille nginx : regroupe les mises à jour de l'image nginx (CircleCI, docker-compose, Dockerfile, GitHub Actions) en une seule PR",
+      "matchPackageNames": ["/^nginx$/"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "groupName": "nginx"
+    },
+    {
+      "description": "Famille redis : regroupe les mises à jour de l'image redis (CircleCI, docker-compose, Dockerfile, GitHub Actions) en une seule PR",
+      "matchPackageNames": ["/^redis$/"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "groupName": "redis"
+    },
+    {
+      "description": "Famille postgres : regroupe les mises à jour de l'image postgres (CircleCI, docker-compose, Dockerfile, GitHub Actions) en une seule PR",
+      "matchPackageNames": ["/^postgres$/"],
+      "matchManagers": [
+        "circleci",
+        "docker-compose",
+        "dockerfile",
+        "github-actions"
+      ],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "groupName": "postgres"
+    }
+  ]
+}

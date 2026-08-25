@@ -1,12 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    ":maintainLockFilesWeekly",
-    ":preserveSemverRanges",
-    ":semanticCommits",
-    ":separateMultipleMajorReleases",
-    "local>1024pix/renovate-config//presets/docker-auth",
+    "customManagers:dockerfileVersions",
+    "local>1024pix/renovate-config:default",
     "local>1024pix/renovate-config//presets/data/airflow",
     "local>1024pix/renovate-config//presets/data/constraints",
     "local>1024pix/renovate-config//presets/data/dbt",
@@ -16,10 +12,7 @@
     "local>1024pix/renovate-config//presets/data/spark",
     "local>1024pix/renovate-config//presets/data/toolchain-jvm",
     "local>1024pix/renovate-config//presets/data/toolchain-python",
-    "local>1024pix/renovate-config//presets/data/toolchain-scala",
-    "local>1024pix/renovate-config//presets/circleci",
-    "local>1024pix/renovate-config//presets/github-actions",
-    "local>1024pix/renovate-config//presets/lockfile"
+    "local>1024pix/renovate-config//presets/data/toolchain-scala"
   ],
   "prConcurrentLimit": 10,
   "labels": ["dependencies"],

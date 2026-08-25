@@ -2,11 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Désactive le suivi de postgres et redis via le datasource docker, ces images étant déjà suivies via les addons Scalingo",
       "matchPackageNames": ["postgres", "redis"],
       "matchDatasources": ["docker"],
       "enabled": false
     },
     {
+      "description": "Désactive l'auto-merge pour les mises à jour des addons Scalingo postgres et redis, qui doivent être validées manuellement",
       "matchDepTypes": ["postgres", "redis"],
       "matchDatasources": ["scalingo-postgres", "scalingo-redis"],
       "automerge": false

@@ -1,23 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
-    "local>1024pix/renovate-config//presets/docker-auth",
     "local>1024pix/renovate-config//presets/circleci",
-    "local>1024pix/renovate-config//presets/group-by-directory",
-    "local>1024pix/renovate-config//presets/group-global-dependencies",
+    "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
+    "local>1024pix/renovate-config//presets/docker-auth",
+    "local>1024pix/renovate-config//presets/github-actions",
+    "local>1024pix/renovate-config//presets/lockfile",
     "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
     "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
-    "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager",
-    "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
-    "local>1024pix/renovate-config//presets/open-telemetry-api",
-    "local>1024pix/renovate-config//presets/open-telemetry-experimental",
-    "local>1024pix/renovate-config//presets/open-telemetry-semantic-conventions.json",
-    "local>1024pix/renovate-config//presets/open-telemetry-contrib.json"
+    "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager"
   ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
@@ -25,22 +21,5 @@
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
   "schedule": "every 1 hour every weekday",
-  "configMigration": true,
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "addLabels": ["auto-bump"],
-      "automerge": true
-    },
-    {
-      "matchPackageNames": [
-        "^@1024pix/",
-        "/^(node|cimg/node)$/",
-        "!@1024pix/epreuves-components"
-      ],
-      "matchUpdateTypes": ["minor", "patch"],
-      "addLabels": ["auto-bump"],
-      "automerge": true
-    }
-  ]
+  "configMigration": true
 }
