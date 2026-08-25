@@ -1,14 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    ":maintainLockFilesWeekly",
-    ":preserveSemverRanges",
-    ":semanticCommits",
-    ":separateMultipleMajorReleases",
     "customManagers:dockerfileVersions",
     "local>1024pix/renovate-config:default",
-    "local>1024pix/renovate-config//presets/docker-auth",
     "local>1024pix/renovate-config//presets/data/airflow",
     "local>1024pix/renovate-config//presets/data/constraints",
     "local>1024pix/renovate-config//presets/data/dbt",
