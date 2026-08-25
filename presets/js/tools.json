@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Groupe les familles de dépendances outils en une seule PR, tous dossiers confondus",
+      "matchPackageNames": ["/^(npm-run-all2|p-queue).*/"],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false
+    },
+    {
+      "description": "Les versions minor et patch sont en auto-merge avec le label auto-bump",
+      "matchPackageNames": ["/^(npm-run-all2|p-queue).*/"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}
