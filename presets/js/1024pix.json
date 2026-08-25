@@ -32,9 +32,18 @@
       "groupName": "pix-stylelint-config"
     },
     {
-      "description": "Regroupe toutes les mises à jour de @1024pix/eslint-config en une seule PR par application",
+      "description": "Regroupe toutes les mises à jour de @1024pix/eslint-config en une seule PR pour toutes les applications",
       "matchPackageNames": ["/^@1024pix/eslint-config$/"],
-      "groupName": "pix-eslint-config"
+      "groupName": "pix-eslint-config",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
+    },
+    {
+      "description": "Regroupe toutes les mises à jour de @1024pix/eslint-plugin en une seule PR pour toutes les applications",
+      "matchPackageNames": ["/^@1024pix/eslint-plugin$/"],
+      "groupName": "pix-eslint-plugin",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
     }
   ]
 }
