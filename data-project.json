@@ -13,8 +13,6 @@
     "local>1024pix/renovate-config//presets/data/toolchain-jvm",
     "local>1024pix/renovate-config//presets/data/toolchain-python",
     "local>1024pix/renovate-config//presets/data/toolchain-scala",
-    "local>1024pix/renovate-config//presets/circleci",
-    "local>1024pix/renovate-config//presets/github-actions",
     "local>1024pix/renovate-config//presets/lockfile"
   ],
   "prConcurrentLimit": 10,
