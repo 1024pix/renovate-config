@@ -4,7 +4,7 @@
     {
       "description": "Famille outillage-python : ruff, pytest et ses plugins, dans [dependency-groups] dev.",
       "matchDepTypes": ["dependency-groups", "tool.uv.dev-dependencies"],
-      "matchPackageNames": ["ruff", "pytest", "/^pytest-/"],
+      "matchPackageNames": ["ruff", "pytest", "/^pytest-/", "pre-commit"],
       "groupName": "outillage-python",
       "addLabels": ["auto-bump"],
       "automerge": true
