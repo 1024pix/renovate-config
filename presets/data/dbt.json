@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille dbt : dbt-core et ses adapters, publies ensemble",
+      "matchPackageNames": ["/^dbt(-|$)/"],
+      "groupName": "dbt",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false
+    },
+    {
+      "description": "dbt : minor et patch automerges, le major reste manuel",
+      "matchPackageNames": ["/^dbt(-|$)/"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}
