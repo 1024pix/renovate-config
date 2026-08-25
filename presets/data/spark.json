@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Track Spark version in PixSparkKubernetesOperator.py",
+      "customType": "regex",
+      "matchStrings": ["SPARK_VERSION = \"(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "org.apache.spark:spark-core",
+      "datasourceTemplate": "sbt-package",
+      "managerFilePatterns": [
+        "/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"
+      ],
+      "packageNameTemplate": "org.apache.spark:spark-core_2.12"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Famille spark : image de base, deps sbt, spark-testing-base et SPARK_VERSION du DAG dans une seule PR.",
+      "matchPackageNames": [
+        "spark",
+        "/^org\\.apache\\.spark:/",
+        "/^com\\.holdenkarau:spark-/"
+      ],
+      "groupName": "spark",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false
+    }
+  ]
+}

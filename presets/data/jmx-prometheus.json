@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["customManagers:dockerfileVersions"],
+  "customManagers": [
+    {
+      "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
+      "customType": "regex",
+      "matchStrings": [
+        "jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar"
+      ],
+      "depNameTemplate": "prometheus/jmx_exporter",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": [
+        "/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"
+      ]
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Famille jmx-prometheus : ENV du Dockerfile et chemin du JAR dans le DAG",
+      "matchDepNames": ["prometheus/jmx_exporter"],
+      "groupName": "jmx-prometheus",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille outillage-scala : plugins sbt de project/plugins.sbt et version scalafmt de .scalafmt.conf",
+      "matchDepNames": ["scalafmt", "/:sbt-/"],
+      "groupName": "outillage-scala",
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    },
+    {
+      "description": "Famille tests-scala : scalatest et scalactic, publies ensemble et toujours a la meme version",
+      "matchPackageNames": ["/^org\\.scalatest:/", "/^org\\.scalactic:/"],
+      "groupName": "tests-scala",
+      "separateMinorPatch": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}

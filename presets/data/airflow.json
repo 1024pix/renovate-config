@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille airflow : apache-airflow, ses providers et l'image apache/airflow du Dockerfile local",
+      "matchPackageNames": ["apache/airflow", "/^apache-airflow/"],
+      "groupName": "airflow",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false
+    }
+  ]
+}

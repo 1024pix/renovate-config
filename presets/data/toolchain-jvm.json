@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille toolchain-jvm : Scala de build.sbt et du tag de l'image sbt, sbt de build.properties et du tag, JDK de l'image de build et de la CI.",
+      "matchPackageNames": [
+        "org.scala-lang:scala-library",
+        "sbt/sbt",
+        "java-jdk",
+        "eclipse-temurin"
+      ],
+      "groupName": "toolchain-jvm",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false
+    }
+  ]
+}

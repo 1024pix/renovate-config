@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "customManagers:githubActionsVersions",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "packageRules": [
+    {
+      "description": "Famille github-actions : les refs d'actions des workflows, hors variables *_VERSION annotees",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false,
+      "separateMinorPatch": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}

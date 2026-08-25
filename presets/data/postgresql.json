@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille postgresql : driver JDBC de build.sbt ; l'addon Scalingo est gere par les presets partages",
+      "matchPackageNames": ["/^org\\.postgresql:/"],
+      "groupName": null
+    }
+  ]
+}
