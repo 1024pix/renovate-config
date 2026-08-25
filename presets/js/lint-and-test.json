@@ -4,7 +4,7 @@
     {
       "description": "Groupe les familles de dépendances lint et test en une seule PR, tous dossiers confondus, en auto-merge avec le label auto-bump",
       "matchPackageNames": [
-        "/^(eslint|stylelint|prettier|sinon|qunit|mocha|chai|cypress|@ember/test-helpers|@formatjs/intl).*/"
+        "/^(eslint|@eslint|stylelint|prettier|sinon|qunit|mocha|chai|cypress|@ember/test-helpers|@formatjs/intl).*/"
       ],
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
@@ -13,7 +13,7 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["/^eslint.*/"],
+      "matchPackageNames": ["/(eslint.*|globals)/"],
       "groupName": "eslint"
     },
     {
