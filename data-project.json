@@ -27,5 +27,13 @@
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "auto",
   "schedule": "every 12 hour every weekday",
-  "configMigration": true
+  "configMigration": true,
+  "packageRules": [
+    {
+      "description": "Automerge des patch pour toutes les dependances data",
+      "matchUpdateTypes": ["patch"],
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
 }
