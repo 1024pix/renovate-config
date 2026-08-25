@@ -12,8 +12,7 @@
     "local>1024pix/renovate-config//presets/data/spark",
     "local>1024pix/renovate-config//presets/data/toolchain-jvm",
     "local>1024pix/renovate-config//presets/data/toolchain-python",
-    "local>1024pix/renovate-config//presets/data/toolchain-scala",
-    "local>1024pix/renovate-config//presets/lockfile"
+    "local>1024pix/renovate-config//presets/data/toolchain-scala"
   ],
   "prConcurrentLimit": 10,
   "labels": ["dependencies"],

@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Maintenance des lockfiles : mergée automatiquement avec le label auto-bump",
       "matchUpdateTypes": ["lockFileMaintenance"],
       "addLabels": ["auto-bump"],
       "automerge": true

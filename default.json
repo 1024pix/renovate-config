@@ -10,6 +10,7 @@
     "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
     "local>1024pix/renovate-config//presets/docker-auth",
     "local>1024pix/renovate-config//presets/github-actions",
+    "local>1024pix/renovate-config//presets/lockfile",
     "local>1024pix/renovate-config//presets/scalingo-addon-datasources",
     "local>1024pix/renovate-config//presets/scalingo-postgres-custom-manager",
     "local>1024pix/renovate-config//presets/scalingo-redis-custom-manager"
@@ -20,13 +21,5 @@
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
   "schedule": "every 1 hour every weekday",
-  "configMigration": true,
-  "packageRules": [
-    {
-      "description": "Maintenance des lockfiles : mergée automatiquement avec le label auto-bump",
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "addLabels": ["auto-bump"],
-      "automerge": true
-    }
-  ]
+  "configMigration": true
 }
