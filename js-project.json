@@ -2,8 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>1024pix/renovate-config:default",
-    "local>1024pix/renovate-config//presets/js/1024pix",
     "local>1024pix/renovate-config//presets/js/group-by-directory",
+    "local>1024pix/renovate-config//presets/js/1024pix",
     "local>1024pix/renovate-config//presets/js/infra",
     "local>1024pix/renovate-config//presets/js/lint-and-test",
     "local>1024pix/renovate-config//presets/js/node",
