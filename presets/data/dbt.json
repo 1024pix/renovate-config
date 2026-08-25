@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "description": "Famille dbt : dbt-core et ses adapters, publies ensemble",
-      "matchPackageNames": ["/^dbt(-|$)/"],
+      "matchPackageNames": ["/^dbt-/"],
       "groupName": "dbt",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
@@ -12,7 +12,7 @@
     },
     {
       "description": "dbt : minor et patch automerges, le major reste manuel",
-      "matchPackageNames": ["/^dbt(-|$)/"],
+      "matchPackageNames": ["/^dbt-/"],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump"],
       "automerge": true
