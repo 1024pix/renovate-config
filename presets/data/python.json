@@ -8,8 +8,7 @@
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
       "separateMinorPatch": false,
-      "separateMultipleMajor": false,
-      "allowedVersions": "/^3\\.13/"
+      "separateMultipleMajor": false
     }
   ]
 }

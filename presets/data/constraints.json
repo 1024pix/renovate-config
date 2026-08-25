@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "JDK : 17 imposé par Spark (<4), et par le java17 du tag spark: qui n'est pas trackable separement.",
+      "matchPackageNames": ["java-jdk", "eclipse-temurin"],
+      "allowedVersions": "/^17($|\\.)/"
+    },
+    {
+      "description": "Scala : binaire 2.12 imposé par Spark (<4).",
+      "matchPackageNames": ["org.scala-lang:scala-library"],
+      "allowedVersions": "/^2\\.12\\./"
+    },
+    {
+      "description": "Python : 3.13 imposé par le suffixe -pythonX.Y du tag airflow, qui n'est pas trackable separement.",
+      "matchDepNames": ["python"],
+      "allowedVersions": "/^3\\.13/"
+    }
+  ]
+}
