@@ -15,11 +15,7 @@
     "local>1024pix/renovate-config//presets/data/toolchain-scala"
   ],
   "prConcurrentLimit": 10,
-  "labels": ["dependencies"],
-  "minimumReleaseAge": "7 days",
-  "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "auto",
-  "schedule": "every 12 hour every weekday",
   "configMigration": true,
   "packageRules": [
     {
