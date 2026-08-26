@@ -19,7 +19,6 @@
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "auto",
-  "schedule": "every 12 hour every weekday",
   "configMigration": true,
   "packageRules": [
     {
