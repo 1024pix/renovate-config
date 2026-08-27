@@ -20,7 +20,7 @@
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "never",
-  "schedule": "every 1 hour every weekday",
+  "schedule": ["* 0-3 * * 1-5"],
   "packageRules": [
     {
       "description": "Re-force minimumReleaseAge à 7 jours : security:minimumReleaseAgeNpm (inclus dans config:best-practices) le rabaisse à 3 jours pour npm",
