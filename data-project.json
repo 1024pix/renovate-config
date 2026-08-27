@@ -22,6 +22,7 @@
     {
       "description": "Automerge des patch pour toutes les dependances data",
       "matchUpdateTypes": ["patch"],
+      "matchDepNames": ["!/^apache-airflow$/", "!/spark/"],
       "addLabels": ["auto-bump"],
       "automerge": true
     }
