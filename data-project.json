@@ -15,6 +15,7 @@
     "local>1024pix/renovate-config//presets/data/toolchain-scala"
   ],
   "prConcurrentLimit": 10,
+  "schedule": ["* * * * 1-5"],
   "rebaseWhen": "auto",
   "configMigration": true,
   "packageRules": [
