@@ -5,6 +5,7 @@
     ":preserveSemverRanges",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
+    ":prHourlyLimitNone",
     "local>1024pix/renovate-config//presets/circleci",
     "local>1024pix/renovate-config//presets/disable-automerge-and-docker-datasource-for-postgres-and-redis",
     "local>1024pix/renovate-config//presets/docker-auth",
