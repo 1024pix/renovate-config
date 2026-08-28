@@ -13,7 +13,6 @@
     "local>1024pix/renovate-config//presets/js/open-telemetry-contrib",
     "local>1024pix/renovate-config//presets/js/open-telemetry-semantic-conventions"
   ],
-  "schedule": ["* * * * 1-5"],
   "packageRules": [
     {
       "description": "Dépendances de développement : la range du manifeste est alignée (bump) sur la nouvelle version installée",
