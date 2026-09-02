@@ -30,9 +30,6 @@
     }
   ],
   "vulnerabilityAlerts": {
-    "reviewers": [
-      "team:team-secu",
-      "team:team-captains"
-    ]
+    "reviewers": ["team:team-secu", "team:team-captains"]
   }
 }
