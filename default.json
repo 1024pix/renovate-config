@@ -28,5 +28,11 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "minimumReleaseAge": "7 days"
     }
-  ]
+  ],
+  "vulnerabilityAlerts": {
+    "reviewers": [
+      "team:team-secu",
+      "team:team-captains"
+    ]
+  }
 }
