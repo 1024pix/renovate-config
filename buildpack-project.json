@@ -1,7 +1,0 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>1024pix/renovate-config:default"],
-  "schedule": ["* * * * 1-5"],
-  "forkProcessing": "enabled",
-  "minimumReleaseAge": "0"
-}
