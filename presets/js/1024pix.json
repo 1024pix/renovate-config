@@ -16,6 +16,11 @@
       "automerge": true
     },
     {
+      "description": "Regroupe toutes les mises à jour de @1024pix/epreuves-components en une seule PR par application",
+      "matchPackageNames": ["/^@1024pix/epreuves-components$/"],
+      "groupName": "pix-epreuves-components"
+    },
+    {
       "description": "Regroupe toutes les mises à jour npm de @1024pix/pix-ui en une seule PR par application",
       "matchPackageNames": ["@1024pix/pix-ui"],
       "matchManagers": ["npm"],
