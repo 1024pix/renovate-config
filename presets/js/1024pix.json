@@ -21,10 +21,10 @@
       "groupName": "pix-epreuves-components"
     },
     {
-      "description": "Regroupe toutes les mises à jour npm de @1024pix/pix-ui en une seule PR par application",
-      "matchPackageNames": ["@1024pix/pix-ui"],
+      "description": "Regroupe toutes les mises à jour npm de @1024pix/nebulix-ember en une seule PR par application",
+      "matchPackageNames": ["@1024pix/nebulix-ember"],
       "matchManagers": ["npm"],
-      "groupName": "pix-ui"
+      "groupName": "nebulix"
     },
     {
       "description": "Regroupe toutes les mises à jour de @1024pix/ember-testing-library en une seule PR par application",
@@ -35,13 +35,6 @@
       "description": "Regroupe toutes les mises à jour de @1024pix/stylelint-config en une seule PR par application",
       "matchPackageNames": ["/^@1024pix/stylelint-config$/"],
       "groupName": "pix-stylelint-config"
-    },
-    {
-      "description": "Regroupe toutes les mises à jour de @1024pix/eslint-config en une seule PR pour toutes les applications",
-      "matchPackageNames": ["/^@1024pix/eslint-config$/"],
-      "groupName": "pix-eslint-config",
-      "additionalBranchPrefix": "",
-      "commitMessageSuffix": ""
     },
     {
       "description": "Regroupe toutes les mises à jour de @1024pix/eslint-plugin en une seule PR pour toutes les applications",
