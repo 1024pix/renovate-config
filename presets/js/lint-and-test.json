@@ -2,10 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Groupe les familles de dépendances lint et test en une seule PR, tous dossiers confondus, en auto-merge avec le label auto-bump",
+      "description": "Groupe les packages de lint",
       "matchPackageNames": [
-        "/^(eslint|@eslint|stylelint|prettier|sinon|qunit|mocha|chai|cypress|@ember/test-helpers|@formatjs/intl|nock).*/"
+        "/(prettier|stylelint|eslint|oxlint|oxfmt|@formatjs\/intl|globals|ls-lint|schemalint|ember-template-lint|@glint)/"
       ],
+      "groupName": "linters",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
       "separateMultipleMajor": false,
@@ -13,40 +14,48 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["/(eslint.*|globals)/"],
-      "groupName": "eslint"
+      "description": "Groupe les packages de test API",
+      "matchPackageNames": [
+        "/(sinon|mocha|chai|vitest|nock|dependency-cruiser|knip)/"
+      ],
+      "groupName": "tests-api",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
     },
     {
-      "matchPackageNames": ["/^stylelint.*/"],
-      "groupName": "stylelint"
+      "description": "Groupe les packages de test Front",
+      "matchPackageNames": [
+        "/(qunit|@ember\/test-helpers|ember-exam|miragejs)/"
+      ],
+      "groupName": "tests-front",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
     },
     {
-      "matchPackageNames": ["/^prettier.*/"],
-      "groupName": "prettier"
+      "description": "Groupe les packages de test e2e",
+      "matchPackageNames": ["/(cypress|playwright)/"],
+      "groupName": "tests-e2e",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
     },
     {
-      "matchPackageNames": ["/^sinon.*/"],
-      "groupName": "sinon"
-    },
-    {
-      "matchPackageNames": ["/^qunit.*/"],
-      "groupName": "qunit"
-    },
-    {
-      "matchPackageNames": ["/^mocha.*/"],
-      "groupName": "mocha"
-    },
-    {
-      "matchPackageNames": ["/^chai.*/"],
-      "groupName": "chai"
-    },
-    {
-      "matchPackageNames": ["/^cypress.*/"],
-      "groupName": "cypress"
-    },
-    {
-      "matchPackageNames": ["/^@formatjs/intl.*/"],
-      "groupName": "@formatjs/intl"
+      "description": "Groupe les packages liés à typescript",
+      "matchPackageNames": ["/(typescript|@types)/"],
+      "groupName": "typescript",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false,
+      "addLabels": ["auto-bump"],
+      "automerge": true
     }
   ]
 }
