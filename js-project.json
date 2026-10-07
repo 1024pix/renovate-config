@@ -6,6 +6,7 @@
     "local>1024pix/renovate-config//presets/js/1024pix",
     "local>1024pix/renovate-config//presets/js/infra",
     "local>1024pix/renovate-config//presets/js/lint-and-test",
+    "local>1024pix/renovate-config//presets/js/ember-frontends",
     "local>1024pix/renovate-config//presets/js/node",
     "local>1024pix/renovate-config//presets/js/tools",
     "local>1024pix/renovate-config//presets/js/open-telemetry-api",

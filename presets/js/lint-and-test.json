@@ -4,7 +4,7 @@
     {
       "description": "Groupe les packages de lint",
       "matchPackageNames": [
-        "/(prettier|stylelint|eslint|oxlint|oxfmt|@formatjs\/intl|globals|ls-lint|schemalint|ember-template-lint|@glint)/"
+        "/(prettier|stylelint|eslint|oxlint|oxfmt|globals|ls-lint|schemalint|ember-template-lint|@glint)/"
       ],
       "groupName": "linters",
       "additionalBranchPrefix": "",
@@ -28,7 +28,7 @@
     {
       "description": "Groupe les packages de test Front",
       "matchPackageNames": [
-        "/(qunit|@ember\/test-helpers|ember-exam|miragejs)/"
+        "/(qunit|@ember\/test-helpers|ember-exam|miragejs|ember-cli-mirage|faker-js)/"
       ],
       "groupName": "tests-front",
       "additionalBranchPrefix": "",

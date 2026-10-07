@@ -1,0 +1,54 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Groupe les packages emberjs",
+      "matchPackageNames": [
+        "ember-source",
+        "ember-cli",
+        "ember-cli-babel",
+        "ember-cli-htmlbars",
+        "ember-resolver",
+        "@glimmer/**"
+      ],
+      "groupName": "emberjs",
+      "separateMultipleMajor": true,
+      "automerge": false
+    },
+    {
+      "description": "Groupe les packages emberjs utilities",
+      "matchPackageNames": ["@ember/**"],
+      "groupName": "emberjs-utilities",
+      "separateMultipleMajor": true,
+      "automerge": false
+    },
+    {
+      "description": "Groupe les packages warp-drive / ember-data",
+      "matchPackageNames": ["@warp-drive/**", "@ember-data/**"],
+      "groupName": "warp-drive",
+      "separateMultipleMajor": true,
+      "automerge": false
+    },
+    {
+      "description": "Groupe les packages embroider",
+      "matchPackageNames": ["@embroider/**"],
+      "groupName": "embroider",
+      "separateMultipleMajor": true,
+      "automerge": false
+    },
+    {
+      "description": "Groupe les packages Babel",
+      "matchPackageNames": ["@babel/**", "ember-cli-babel"],
+      "groupName": "babel",
+      "separateMultipleMajor": true,
+      "automerge": false
+    },
+    {
+      "description": "Groupe les packages fronts i18n",
+      "matchPackageNames": ["ember-intl", "@ember-intl/**", "@formatjs/**"],
+      "groupName": "ember-i18n",
+      "separateMultipleMajor": true,
+      "automerge": false
+    }
+  ]
+}
