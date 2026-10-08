@@ -5,7 +5,7 @@
     ":automergeMinor",
     ":automergeLinters",
     "group:linters",
-    "group:JsTest",
+    "group:jsTest",
     "group:opentelemetry-jsMonorepo",
     "group:opentelemetry-js-contribMonorepo",
     "local>1024pix/renovate-config//presets/js/group-by-directory",
