@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Packages internes @1024pix : aucun délai de publication ni limite de PR concurrentes",
+      "matchPackageNames": ["/^@1024pix//"],
+      "minimumReleaseAge": "0",
+      "prConcurrentLimit": 0
+    }
+  ]
+}
