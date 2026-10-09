@@ -1,23 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":preserveSemverRanges",
-    ":separateMultipleMajorReleases",
-    ":prHourlyLimitNone",
-    ":configMigration",
-    "abandonments:recommended"
-  ],
-  "prConcurrentLimit": 5,
-  "labels": ["dependencies"],
-  "minimumReleaseAge": "7 days",
-  "commitMessagePrefix": "[BUMP]",
-  "rebaseWhen": "conflicted",
-  "schedule": ["* 0-3 * * 1-5"],
-  "vulnerabilityAlerts": {
-    "rangeStrategy": "bump",
-    "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}} [SECURITY]",
-    "reviewers": ["team:team-secu", "team:team-captains"],
-    "automerge": false
-  }
+  "description": "Déprécié : à supprimé inclu dans default",
+  "extends": []
 }
