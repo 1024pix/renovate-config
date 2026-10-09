@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":automergeStableNonMajor",
+    ":automergeLinters",
+    "group:linters",
+    "group:jsTest",
+    "group:opentelemetry-jsMonorepo",
+    "group:opentelemetry-js-contribMonorepo",
+    "local>1024pix/renovate-config//presets/js-v2/group-by-directory",
+    "local>1024pix/renovate-config//presets/js-v2/1024pix",
+    "local>1024pix/renovate-config//presets/js-v2/infra",
+    "local>1024pix/renovate-config//presets/js-v2/node"
+  ]
+}

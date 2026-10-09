@@ -12,8 +12,13 @@
     "lint": "prettier --check .",
     "test": "run-p validate:**",
     "validate:default": "renovate-config-validator --strict default.json",
+    "validate:default-v2": "renovate-config-validator --strict default-v2.json",
     "validate:data-project": "renovate-config-validator --strict data-project.json",
     "validate:js-project": "renovate-config-validator --strict js-project.json",
+    "validate:js-project-v2": "renovate-config-validator --strict js-project-v2.json",
+    "validate:js-app": "renovate-config-validator --strict js-app.json",
+    "validate:js-lib": "renovate-config-validator --strict js-lib.json",
+    "validate:infra-v2": "renovate-config-validator --strict infra-v2.json",
     "validate:presets": "renovate-config-validator --strict presets/*.json presets/**/*.json"
   },
   "repository": {

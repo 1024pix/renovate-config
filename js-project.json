@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Déprécié : utiliser js-app ou js-lib",
   "extends": [
     "local>1024pix/renovate-config:default",
     "local>1024pix/renovate-config//presets/js/group-by-directory",
