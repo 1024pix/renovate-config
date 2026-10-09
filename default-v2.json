@@ -13,7 +13,7 @@
   "labels": ["dependencies"],
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
-  "rebaseWhen": "never",
+  "rebaseWhen": "conflicted",
   "schedule": ["* 0-3 * * 1-5"],
   "vulnerabilityAlerts": {
     "rangeStrategy": "bump",
