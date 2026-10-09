@@ -6,6 +6,11 @@
       "matchPackageNames": ["/^@1024pix//"],
       "minimumReleaseAge": "0",
       "prConcurrentLimit": 0
+    },
+    {
+      "description": "@1024pix/epreuves-components : pas d'auto-merge",
+      "matchPackageNames": ["@1024pix/epreuves-components"],
+      "automerge": false
     }
   ]
 }
