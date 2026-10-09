@@ -5,7 +5,9 @@
     ":preserveSemverRanges",
     ":semanticCommits",
     ":separateMultipleMajorReleases",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
+    ":configMigration",
+    "abandonments:recommended"
   ],
   "prConcurrentLimit": 5,
   "labels": ["dependencies"],
