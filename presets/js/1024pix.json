@@ -2,46 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Packages internes @1024pix : aucun délai de publication ni limite de PR concurrentes, et la range est alignée (bump) sur la version installée",
+      "description": "Packages internes @1024pix : aucun délai de publication ni limite de PR concurrentes",
       "matchPackageNames": ["/^@1024pix//"],
       "minimumReleaseAge": "0",
-      "prConcurrentLimit": 0,
-      "rangeStrategy": "bump"
+      "prConcurrentLimit": 0
     },
     {
-      "description": "Packages internes @1024pix (hors epreuves-components) : mises à jour minor/patch auto-mergées avec le label auto-bump",
-      "matchPackageNames": ["/^@1024pix//", "!@1024pix/epreuves-components"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "addLabels": ["auto-bump"],
-      "automerge": true
-    },
-    {
-      "description": "Regroupe toutes les mises à jour de @1024pix/epreuves-components en une seule PR par application",
-      "matchPackageNames": ["/^@1024pix/epreuves-components$/"],
-      "groupName": "pix-epreuves-components"
-    },
-    {
-      "description": "Regroupe toutes les mises à jour npm de @1024pix/nebulix-ember en une seule PR par application",
-      "matchPackageNames": ["@1024pix/nebulix-ember"],
-      "matchManagers": ["npm"],
-      "groupName": "nebulix"
-    },
-    {
-      "description": "Regroupe toutes les mises à jour de @1024pix/ember-testing-library en une seule PR par application",
-      "matchPackageNames": ["/^@1024pix/ember-testing-library$/"],
-      "groupName": "pix-ember-testing-library"
-    },
-    {
-      "description": "Regroupe toutes les mises à jour de @1024pix/stylelint-config en une seule PR par application",
-      "matchPackageNames": ["/^@1024pix/stylelint-config$/"],
-      "groupName": "pix-stylelint-config"
-    },
-    {
-      "description": "Regroupe toutes les mises à jour de @1024pix/eslint-plugin en une seule PR pour toutes les applications",
-      "matchPackageNames": ["/^@1024pix/eslint-plugin$/"],
-      "groupName": "pix-eslint-plugin",
-      "additionalBranchPrefix": "",
-      "commitMessageSuffix": ""
+      "description": "@1024pix/epreuves-components : pas d'auto-merge",
+      "matchPackageNames": ["@1024pix/epreuves-components"],
+      "automerge": false
     }
   ]
 }

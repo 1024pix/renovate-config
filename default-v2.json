@@ -1,5 +1,0 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Déprécié : à supprimer, alias de default",
-  "extends": ["local>1024pix/renovate-config:default"]
-}

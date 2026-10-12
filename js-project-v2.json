@@ -1,5 +1,0 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Déprécié : alias de js-app, utiliser js-app ou js-lib",
-  "extends": ["local>1024pix/renovate-config:js-app"]
-}

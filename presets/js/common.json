@@ -7,9 +7,9 @@
     "group:jsTest",
     "group:opentelemetry-jsMonorepo",
     "group:opentelemetry-js-contribMonorepo",
-    "local>1024pix/renovate-config//presets/js-v2/group-by-directory",
-    "local>1024pix/renovate-config//presets/js-v2/1024pix",
-    "local>1024pix/renovate-config//presets/js-v2/infra",
-    "local>1024pix/renovate-config//presets/js-v2/node"
+    "local>1024pix/renovate-config//presets/js/group-by-directory",
+    "local>1024pix/renovate-config//presets/js/1024pix",
+    "local>1024pix/renovate-config//presets/js/infra",
+    "local>1024pix/renovate-config//presets/js/node"
   ]
 }
