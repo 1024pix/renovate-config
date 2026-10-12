@@ -2,6 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:js-lib",
-    "local>1024pix/renovate-config//presets/js-v2/common"
+    "local>1024pix/renovate-config//presets/js/common"
   ]
 }

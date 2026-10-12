@@ -8,13 +8,12 @@
       "versioning": "node"
     },
     {
-      "description": "Famille node : regroupe les montées minor/patch de Node.js (et de l'image cimg/node) en une seule PR auto-mergée avec le label auto-bump",
+      "description": "Famille node : regroupe les montées minor/patch de Node.js (et de l'image cimg/node) en une seule PR auto-mergée",
       "matchPackageNames": ["/^(node|cimg/node)$/"],
       "groupName": "node",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
       "matchUpdateTypes": ["minor", "patch"],
-      "addLabels": ["auto-bump"],
       "automerge": true
     }
   ]

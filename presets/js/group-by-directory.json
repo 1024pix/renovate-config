@@ -6,12 +6,6 @@
       "matchPackageNames": ["*"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
-    },
-    {
-      "description": "Applique le même isolement par application aux PR de maintenance de lockfile",
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
-      "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     }
   ]
 }

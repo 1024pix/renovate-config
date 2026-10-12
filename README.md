@@ -11,12 +11,12 @@ https://app.renovatebot.com/dashboard#github/1024pix/renovate-config/
 A repository extends **one entry point**, picked according to its stack.
 Each entry point builds on `default`.
 
-| Entry point    | For                                             | Key differences from `default`                                                   |
-| -------------- | ----------------------------------------------- | -------------------------------------------------------------------------------- |
-| `default`      | Common base, extended by the others             | —                                                                                |
-| `js-app`       | For JS applications                             | Adds the `presets/js-v2/*` families and pin `dependencies` and `devDependencies` |
-| `js-lib`       | For JS libraries                                | Adds the `presets/js-v2/*` families and pin only `devDependencies`               |
-| `data-project` | Python, Scala/Spark, Airflow, dbt, JVM projects | Adds the `presets/data/*` families                                               |
+| Entry point    | For                                             | Key differences from `default`                                                |
+| -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------- |
+| `default`      | Common base, extended by the others             | —                                                                             |
+| `js-app`       | For JS applications                             | Adds the `presets/js/*` families and pin `dependencies` and `devDependencies` |
+| `js-lib`       | For JS libraries                                | Adds the `presets/js/*` families and pin only `devDependencies`               |
+| `data-project` | Python, Scala/Spark, Airflow, dbt, JVM projects | Adds the `presets/data/*` families                                            |
 
 ## Project onboarding
 
