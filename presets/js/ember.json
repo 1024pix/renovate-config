@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Famille warpdrive : regroupe les packages @warpdrive/*, ember-data et @ember-data/*",
+      "matchPackageNames": ["@warpdrive/**", "ember-data", "@ember-data/**"],
+      "groupName": "warpdrive"
+    },
+    {
+      "description": "Famille ember-intl : regroupe ember-intl et les packages @ember-intl/*",
+      "matchPackageNames": ["ember-intl", "@ember-intl/**"],
+      "groupName": "ember-intl"
+    }
+  ]
+}
