@@ -3,23 +3,17 @@
   "extends": ["customManagers:dockerfileVersions"],
   "customManagers": [
     {
-      "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
+      "description": "Track JMX Prometheus agent version in Dockerfile",
       "customType": "regex",
-      "matchStrings": [
-        "jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar",
-        "JMX_EXPORTER_AGENT_VERSION=(?<currentValue>[\\d.]+)"
-      ],
+      "matchStrings": ["JMX_EXPORTER_AGENT_VERSION=(?<currentValue>[\\d.]+)"],
       "depNameTemplate": "prometheus/jmx_exporter",
       "datasourceTemplate": "github-releases",
-      "managerFilePatterns": [
-        "/data-pipelines/data_pipelines/helpers/operators/PixSparkKubernetesOperator\\.py$/",
-        "Dockerfile"
-      ]
+      "managerFilePatterns": ["Dockerfile"]
     }
   ],
   "packageRules": [
     {
-      "description": "Famille jmx-prometheus : ENV du Dockerfile et chemin du JAR dans le DAG",
+      "description": "Famille jmx-prometheus : ENV JMX_EXPORTER_AGENT_VERSION du Dockerfile",
       "matchDepNames": ["prometheus/jmx_exporter"],
       "groupName": "jmx-prometheus",
       "additionalBranchPrefix": "",
