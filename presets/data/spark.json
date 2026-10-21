@@ -8,7 +8,7 @@
       "depNameTemplate": "org.apache.spark:spark-core",
       "datasourceTemplate": "sbt-package",
       "managerFilePatterns": [
-        "/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"
+        "/data-pipelines/data_pipelines/helpers/operators/PixSparkKubernetesOperator\\.py$/"
       ],
       "packageNameTemplate": "org.apache.spark:spark-core_2.12"
     }

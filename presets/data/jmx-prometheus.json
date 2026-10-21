@@ -12,7 +12,7 @@
       "depNameTemplate": "prometheus/jmx_exporter",
       "datasourceTemplate": "github-releases",
       "managerFilePatterns": [
-        "/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/",
+        "/data-pipelines/data_pipelines/helpers/operators/PixSparkKubernetesOperator\\.py$/",
         "Dockerfile"
       ]
     }
