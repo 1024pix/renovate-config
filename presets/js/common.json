@@ -12,5 +12,8 @@
     "local>1024pix/renovate-config//presets/js/ember",
     "local>1024pix/renovate-config//presets/js/infra",
     "local>1024pix/renovate-config//presets/js/node"
-  ]
+  ],
+  "pin": {
+    "automerge": true
+  }
 }
