@@ -25,6 +25,6 @@
     "rangeStrategy": "bump",
     "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}} [SECURITY]",
     "reviewers": ["team:team-secu", "team:team-captains"],
-    "automerge": false
+    "automerge": true
   }
 }
