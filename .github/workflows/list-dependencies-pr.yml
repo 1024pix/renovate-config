@@ -1,0 +1,34 @@
+name: List dependencies PRs
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  List-Dependencies-PRs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: 1024pix/pix-actions/list-dependencies-prs@main
+        id: list-dependencies
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notification Slack
+        uses: slackapi/slack-github-action@dcb1066f776dd043e64d0e8ba94ca15cc7e1875d # v4.0.0
+        env:
+          RESULT: ${{ steps.list-dependencies.outputs.repositories }}
+        with:
+          webhook-type: incoming-webhook
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          payload: |
+            text: "Liste des repositories contenant le plus de PRs Renovate ouvertes"
+            blocks:
+              - type: "header"
+                text:
+                  type: "plain_text"
+                  text: "Liste des repositories contenant le plus de PRs Renovate ouvertes"
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: ${{ tojson(env.RESULT) }}
