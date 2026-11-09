@@ -20,6 +20,7 @@
   "minimumReleaseAge": "7 days",
   "commitMessagePrefix": "[BUMP]",
   "rebaseWhen": "auto",
+  "recreateWhen": "never",
   "schedule": ["* 0-3 * * 1-5"],
   "vulnerabilityAlerts": {
     "rangeStrategy": "bump",
