@@ -2,17 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Node.js et l'image cimg/node : la range du manifeste est alignée (bump) sur la nouvelle version installée, avec le schéma de versioning propre à Node",
-      "matchPackageNames": ["/^(node|cimg/node)$/"],
-      "rangeStrategy": "bump",
-      "versioning": "node"
-    },
-    {
-      "description": "Famille node : regroupe les montées minor/patch de Node.js (et de l'image cimg/node) en une seule PR auto-mergée",
+      "description": "Famille node : Node.js et l'image cimg/node sont regroupés en une seule PR pour tout le monorepo",
       "matchPackageNames": ["/^(node|cimg/node)$/"],
       "groupName": "node",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
+      "rangeStrategy": "bump",
+      "versioning": "node"
+    },
+    {
+      "description": "Auto-merge des montées minor/patch de la famille node",
+      "matchPackageNames": ["/^(node|cimg/node)$/"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
