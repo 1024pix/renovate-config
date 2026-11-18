@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Une PR suffixée par la liste des répertoires concernés",
+      "matchPackageNames": ["*"],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "({{#each (distinct (lookupArray upgrades \"packageFileDir\"))}}{{#if @index}},{{/if}}{{#if this}}{{this}}{{else}}root{{/if}}{{/each}})"
+    }
+  ]
+}

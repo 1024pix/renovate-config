@@ -8,17 +8,9 @@
       "prConcurrentLimit": 0
     },
     {
-      "description": "Packages internes @1024pix : une seule PR par package pour tout le monorepo (pas de découpage par répertoire)",
-      "matchPackageNames": ["/^@1024pix//"],
-      "additionalBranchPrefix": "",
-      "commitMessageSuffix": ""
-    },
-    {
       "description": "Regroupe stylelint et @1024pix/stylelint-config dans une seule PR pour tout le monorepo, majors comprises",
       "matchPackageNames": ["stylelint", "@1024pix/stylelint-config"],
       "groupName": "stylelint",
-      "additionalBranchPrefix": "",
-      "commitMessageSuffix": "",
       "separateMajorMinor": false
     }
   ]
