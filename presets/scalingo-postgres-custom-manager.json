@@ -6,7 +6,8 @@
       "managerFilePatterns": [
         "/(^|/)scalingo.json$/",
         "/(^|/)(?:docker-)?compose[^/]*\\.ya?ml$/",
-        "/^.circleci/config.yml$/"
+        "/^.circleci/config.yml$/",
+        "/^.circleci/jobs.yml$/"
       ],
       "matchStrings": [
         "\"plan\": \"postgresql:postgresql-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",
