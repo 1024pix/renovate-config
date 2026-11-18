@@ -6,6 +6,12 @@
       "matchPackageNames": ["/^@1024pix//"],
       "minimumReleaseAge": "0",
       "prConcurrentLimit": 0
+    },
+    {
+      "description": "Regroupe stylelint et @1024pix/stylelint-config dans une seule PR, majors comprises",
+      "matchPackageNames": ["stylelint", "@1024pix/stylelint-config"],
+      "groupName": "stylelint",
+      "separateMajorMinor": false
     }
   ]
 }
