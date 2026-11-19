@@ -4,12 +4,20 @@
     {
       "description": "Regroupe les packages warp-drive et ember-data",
       "matchPackageNames": ["@warp-drive/**", "ember-data", "@ember-data/**"],
-      "groupName": "warp-drive"
+      "groupName": "warp-drive",
+      "separateMultipleMajor": false
     },
     {
       "description": "Regroupe les packages ember-intl",
       "matchPackageNames": ["ember-intl", "@ember-intl/**"],
-      "groupName": "ember-intl"
+      "groupName": "ember-intl",
+      "separateMultipleMajor": false
+    },
+    {
+      "description": "Regroupe les packages format-intl",
+      "matchPackageNames": ["@format-intl/**"],
+      "groupName": "format-intl",
+      "separateMultipleMajor": false
     }
   ]
 }
